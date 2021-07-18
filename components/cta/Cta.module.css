@@ -1,0 +1,95 @@
+
+.wpo-cta-area,
+.wpo-cta-area-2 {
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: url('../../public/images/cta.jpg') no-repeat center center / cover;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.wpo-cta-area:before,
+.wpo-cta-area-2:before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .7);
+    z-index: -1;
+}
+
+.wpo-cta-text {
+    max-width: 715px;
+    margin: auto;
+    text-align: center;
+}
+
+.wpo-cta-text h2 {
+    font-size: 45px;
+    color: #fff;
+    margin-top: 0;
+}
+
+.wpo-cta-text p {
+    color: #dbdbdb;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+.wpo-cta-text .theme-btn {
+    margin-right: 15px;
+}
+
+@media(max-width: 992px) {
+    .wpo-cta-text h2 {
+        font-size: 30px;
+    }
+}
+
+
+@media(max-width: 590px) {
+
+    .wpo-cta-text h2 {
+        font-size: 33px;
+    }
+}
+
+
+.wpo-cta-area-2:before {
+    background: rgba(8, 204, 127, 0.84);
+}
+
+.wpo-cta-text p {
+    color: #fff;
+}
+
+.wpo-cta-text .theme-btn {
+    background: #fff;
+    border: 1px solid #fff;
+    color: #333;
+}
+
+.wpo-cta-text .theme-btn:hover {
+    color: #333;
+}
+
+.wpo-cta-text .theme-btn-s2:hover {
+    color: #333;
+    background: #fff;
+}
+
+.wpo-cta-text .theme-btn:hover {
+    color: #fff;
+    background: transparent;
+}
+
+@media(max-width:450px){
+    .wpo-cta-text .theme-btn {
+        margin-right: 4px;
+    }
+}

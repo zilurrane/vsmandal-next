@@ -1,0 +1,82 @@
+
+.wpo-about-text .wpo-section-title,
+.wpo-about-text-2 .wpo-section-title {
+    text-align: left;
+    margin: unset;
+    margin-bottom: 35px;
+}
+
+.wpo-about-text p,
+.wpo-about-text-2 p {
+    margin-bottom: 35px;
+}
+
+.wpo-about-text {
+    padding-right: 50px;
+    padding-top: 30px;
+}
+
+.wpo-about-img img,
+.wpo-about-img-2 img {
+    width: 100%;
+}
+
+.wpo-about-img-3 {
+    width: 165%;
+    position: relative;
+    right: -34px;
+    top: -25px;
+}
+
+@media(max-width: 1200px) {
+
+    .wpo-about-img,
+    .wpo-about-img-2 {
+        padding-top: 50px;
+    }
+}
+
+.wpo-about-img-2 {
+    width: 830px;
+    position: relative;
+    left: -200px;
+}
+
+@media(max-width: 1200px) {
+    .wpo-about-img-2 {
+        width: 122%;
+        position: relative;
+        left: -80px;
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width: 992px) {
+    .wpo-about-img-2 {
+        width: 100%;
+        position: relative;
+        left: 0;
+        margin-bottom: 30px;
+        padding-top: 0;
+    }
+    .wpo-about-img-3 {
+        top: 0;
+    }
+}
+
+@media(max-width: 450px) {
+    .video-text{
+        display: none;
+    }
+    .slide-caption .btns ul {
+        margin-left: 15px;
+    }
+}
+
+.wpo-about-text .btns ul {
+    margin-left: 20px;
+}
+
+.wpo-about-text .video-holder .wrap{
+    animation: none;
+}

@@ -1,0 +1,140 @@
+
+.wpo-blog-content {
+    background: #fff;
+    box-shadow: 0px 5px 9.8px 0.2px rgba(85, 85, 85, 0.07);
+    transition: all .3s;
+    padding: 30px;
+    width: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+    position: relative;
+    margin-top: -60px;
+    border-radius: 5px;
+}
+
+.wpo-blog-content span {
+    font-size: 13px;
+    color: #999;
+    padding-left: 20px;
+}
+
+.wpo-blog-content h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 0;
+    margin-top: 10px;
+    padding-left: 20px;
+    position: relative;
+    transition: all .3s;
+}
+.wpo-blog-content h2 a{
+	color: #062265;
+	font-weight: 700;
+}
+
+.wpo-blog-content h2:before {
+    position: absolute;
+    left: 0;
+    top: 7px;
+    width: 10px;
+    height: 10px;
+    background: var(--primary);
+    border-radius: 50%;
+    content: "";
+    transition: all .3s;
+
+}
+
+.wpo-blog-item {
+    transition: all .3s;
+}
+
+.wpo-blog-item:hover .wpo-blog-content {
+    background: var(--primary);
+}
+
+.wpo-blog-content span {
+    transition: all .3s;
+}
+
+.wpo-blog-item:hover .wpo-blog-content span {
+    color: #fff;
+}
+
+.wpo-blog-item:hover .wpo-blog-content h2 a{
+    color: #fff;
+}
+.wpo-blog-item:hover .wpo-blog-content h2:before {
+    background: #fff;
+}
+
+.wpo-blog-img img {
+    width: 100%;
+}
+
+@media(max-width: 1200px) {
+    .wpo-blog-content h2 {
+        font-size: 20px;
+    }
+
+}
+
+@media(max-width: 992px) {
+    .wpo-blog-item {
+        margin-bottom: 30px;
+    }
+
+    .wpo-blog-area {
+        padding-bottom: 60px;
+    }
+}
+
+@media(max-width: 767px) {
+    .custom-grid {
+        width: 50%;
+        float: left;
+    }
+
+    .wpo-event-text h2 {
+        font-size: 15px;
+    }
+
+    .wpo-world-section {
+        flex-wrap: wrap;
+        padding: 35px;
+    }
+
+    .wpo-world-section h2 {
+        margin-bottom: 20px;
+    }
+
+    .wpo-blog-content h2 {
+        font-size: 18px;
+    }
+}
+
+@media(max-width: 590px) {
+    .custom-grid {
+        width: 100%;
+        float: none;
+    }
+
+    .wpo-counter-area .wpo-counter-grids .grid,
+    .wpo-counter-style-2 .wpo-counter-grids .grid {
+        width: 45%;
+    }
+
+    .wpo-counter-area .wpo-counter-grids .grid:before,
+    .wpo-counter-style-2 .wpo-counter-grids .grid:before {
+        display: none;
+    }
+
+    .wpo-cta-area,
+    .wpo-cta-area-2 {
+        padding: 70px 5px;
+    }
+
+    .wpo-cta-text h2 {
+        font-size: 33px;
+    }
+}
