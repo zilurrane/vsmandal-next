@@ -1,21 +1,14 @@
-import React, { memo, useEffect } from 'react'
+import React, { memo } from 'react'
 import Logo from '../../public/images/logo.png'
-import { Link, useLocation } from 'react-router-dom'
+import Link from 'next/link'
+import Image from 'next/image'
 import HeaderTopbar from '../HeaderTopbar'
 import MobileMenu from '../../components/MobileMenu'
-import './style.scss'
-import { useDispatch, useSelector } from 'react-redux'
-import { getMenus } from '../../redux/masterData/masterDataActions'
 
 const Header = () => {
-    const dispatch = useDispatch();
 
-    useEffect(() => {
-        dispatch(getMenus());
-    }, [dispatch]);
-
-    const menus = useSelector(state => state.masterData.menus) || [];
-    const currentLocation = useLocation();
+    const menus = [{ "id": 1, "title": "Home", "link": "\/" }, { "id": 2, "title": "About Us", "link": "\/about" }, { "id": 3, "title": "Projects", "link": "\/projects", "submenu": [{ "id": 31, "title": "Youth Empowerment", "link": "\/projects\/youth-empowerment", "submenu": [{ "id": 311, "title": "Library", "link": "\/projects\/youth-empowerment\/library" }, { "id": 312, "title": "IT Team", "link": "\/projects\/youth-empowerment\/it-team" }] }] }, { "id": 4, "title": "Events", "link": "\/events", "submenu": [{ "id": 41, "title": "Socio-Cultural", "link": "\/events\/socio-cultural", "submenu": [{ "id": 411, "title": "Swami Vivekanand Jayanti", "link": "\/events\/socio-cultural\/swami-vivekanand-jayanti" }, { "id": 412, "title": "Rashtrapujan", "link": "\/events\/socio-cultural\/rashtrapujan" }] }] }, { "id": 5, "title": "Contact", "link": "\/contact" }];
+    const currentLocation = '/home';
 
     return (
         <div className="middle-header header-style-3">
@@ -25,11 +18,14 @@ const Header = () => {
                     <div className="row">
                         <div className="col-lg-4 col-md-10 col-sm-10 col-10">
                             <div className="logo">
-                                <Link href="/" title="Vivekanand Seva Mandal"><img src={Logo} alt="" />
-                                    <div className="text">
-                                        <div>Vivekanand</div>
-                                        <div>Seva Mandal</div>
-                                    </div>
+                                <Link href="/" title="Vivekanand Seva Mandal">
+                                    <a href="/" title="Vivekanand Seva Mandal">
+                                        <Image src={Logo} alt="" />
+                                        <div className="text">
+                                            <div>Vivekanand</div>
+                                            <div>Seva Mandal</div>
+                                        </div>
+                                    </a>
                                 </Link>
                             </div>
                         </div>

@@ -9,12 +9,14 @@ import EventSection from '../../components/event'
 import CtaSection from '../../components/cta'
 import WorldSection from '../../components/world'
 import BlogSection from '../../components/BlogSection'
+import Header from '../../components/header'
 
 const HomePage = () => {
     return (
         <Fragment>
+            <Header />
             <Hero />
-            <Mission/>
+            <Mission />
             {/* <About/>
             <CaseSlide/>
             <CounterSection/>

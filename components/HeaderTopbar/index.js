@@ -1,9 +1,8 @@
 import React from 'react'
-import {Link}  from 'react-router-dom'
-import './style.scss'
+import Link from 'next/link'
 
 const HeaderTopbar = () => {
-    return(	
+    return (
         <div className="topbar">
             <div className="container">
                 <div className="row">
@@ -18,7 +17,13 @@ const HeaderTopbar = () => {
                     <div className="col col-md-6 col-sm-12 col-12">
                         <div className="contact-info">
                             <ul>
-                                <li><Link className="theme-btn" href="/donate">Donate Now</Link></li>
+                                <li>
+                                    <Link href="/donate">
+                                        <a className="theme-btn" href="/donate">
+                                            Donate Now
+                                        </a>
+                                    </Link>
+                                </li>
                             </ul>
                         </div>
                     </div>

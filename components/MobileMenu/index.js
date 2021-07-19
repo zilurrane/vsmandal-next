@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import { Collapse, CardBody, Card } from 'reactstrap';
-import { Link } from 'react-router-dom'
-import './style.css';
+import Link from 'next/link'
 import { Fragment } from 'react';
 
 export default class MobileMenu extends Component {
