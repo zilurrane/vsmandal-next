@@ -1,7 +1,8 @@
+import Link from 'next/link'
 import React from 'react'
 
 const PageTitle = (props) => {
-    return(
+    return (
         <div className="wpo-breadcumb-area">
             <div className="container">
                 <div className="row">
@@ -9,7 +10,7 @@ const PageTitle = (props) => {
                         <div className="wpo-breadcumb-wrap">
                             <h2>{props.pageTitle}</h2>
                             <ul>
-                                <li><a href="/home">Home</a></li>
+                                <li><Link href="/home">Home</Link></li>
                                 <li><span>{props.pagesub}</span></li>
                             </ul>
                         </div>

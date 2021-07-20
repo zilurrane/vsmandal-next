@@ -5,7 +5,7 @@ import blog3 from '../../public/images/blog/img-3.jpg'
 import Link from 'next/link'
 import Image from 'next/image'
 
-const BlogSection = (props) => {
+const BlogSection = () => {
 
     const ClickHandler = () => {
         window.scrollTo(10, 0);

@@ -19,7 +19,7 @@ const Header = () => {
                         <div className="col-lg-4 col-md-10 col-sm-10 col-10">
                             <div className="logo">
                                 <Link href="/" title="Vivekanand Seva Mandal">
-                                    <a href="/" title="Vivekanand Seva Mandal">
+                                    <a title="Vivekanand Seva Mandal">
                                         <Image src={Logo} alt="" />
                                         <div className="text">
                                             <div>Vivekanand</div>

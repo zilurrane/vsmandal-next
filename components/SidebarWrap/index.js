@@ -3,6 +3,7 @@ import Link from 'next/link'
 import ins1 from '../../public/images/recent-posts/img-1.jpg'
 import ins2 from '../../public/images/recent-posts/img-2.jpg'
 import ins3 from '../../public/images/recent-posts/img-3.jpg'
+import Image from 'next/image';
 
 
 const SidebarWrap = () => {
@@ -28,7 +29,7 @@ const SidebarWrap = () => {
                     <div className="posts">
                         <div className="post">
                             <div className="img-holder">
-                                <img src={ins1} alt=""/>
+                                <Image src={ins1} alt=""/>
                             </div>
                             <div className="details">
                                 <h4><Link href="/blog-details">Many Children are suffering a lot for food.</Link></h4>
@@ -37,7 +38,7 @@ const SidebarWrap = () => {
                         </div>
                         <div className="post">
                             <div className="img-holder">
-                                <img src={ins2} alt=""/>
+                                <Image src={ins2} alt=""/>
                             </div>
                             <div className="details">
                                 <h4><Link href="/blog-details">Be kind for the poor people and the kids.</Link></h4>
@@ -46,7 +47,7 @@ const SidebarWrap = () => {
                         </div>
                         <div className="post">
                             <div className="img-holder">
-                                <img src={ins3} alt=""/>
+                                <Image src={ins3} alt=""/>
                             </div>
                             <div className="details">
                                 <h4><Link href="/blog-details">Be soft and kind for the poor people.</Link></h4>

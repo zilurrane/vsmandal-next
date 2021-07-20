@@ -21,10 +21,10 @@ const Footer = (props) => {
                             <div className="widget about-widget">
                                 <p>Build and Earn with your online store with lots of cool and exclusive wpo-features </p>
                                 <ul>
-                                    <li><Link onClick={ClickHandler} href="/home"><i className="ti-facebook"></i></Link></li>
-                                    <li><Link onClick={ClickHandler} href="/home"><i className="ti-twitter-alt"></i></Link></li>
-                                    <li><Link onClick={ClickHandler} href="/home"><i className="ti-instagram"></i></Link></li>
-                                    <li><Link onClick={ClickHandler} href="/home"><i className="ti-google"></i></Link></li>
+                                    <li><Link onClick={ClickHandler} href="/home" passHref><i className="ti-facebook"></i></Link></li>
+                                    <li><Link onClick={ClickHandler} href="/home" passHref><i className="ti-twitter-alt"></i></Link></li>
+                                    <li><Link onClick={ClickHandler} href="/home" passHref><i className="ti-instagram"></i></Link></li>
+                                    <li><Link onClick={ClickHandler} href="/home" passHref><i className="ti-google"></i></Link></li>
                                 </ul>
                             </div>
                         </div>

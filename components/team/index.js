@@ -28,10 +28,10 @@ const TeamSection = (props) => {
                                     <h2><Link href="/volunteer">Smith Tomkin</Link> </h2>
                                     <span>CEO & Founder</span>
                                     <ul>
-                                        <li><Link href="/volunteer"><i className="ti-facebook"></i></Link></li>
-                                        <li><Link href="/volunteer"><i className="ti-twitter"></i></Link></li>
-                                        <li><Link href="/volunteer"><i className="ti-google"></i></Link></li>
-                                        <li><Link href="/volunteer"><i className="ti-instagram"></i></Link></li>
+                                        <li><Link href="/volunteer" passHref><i className="ti-facebook"></i></Link></li>
+                                        <li><Link href="/volunteer" passHref><i className="ti-twitter"></i></Link></li>
+                                        <li><Link href="/volunteer" passHref><i className="ti-google"></i></Link></li>
+                                        <li><Link href="/volunteer" passHref><i className="ti-instagram"></i></Link></li>
                                     </ul>
                                 </div>
                             </div>
@@ -47,10 +47,10 @@ const TeamSection = (props) => {
                                     <h2><Link href="/volunteer">Robert Honey</Link></h2>
                                     <span>Volunteer</span>
                                     <ul>
-                                        <li><Link href="/volunteer"><i className="ti-facebook"></i></Link></li>
-                                        <li><Link href="/volunteer"><i className="ti-twitter"></i></Link></li>
-                                        <li><Link href="/volunteer"><i className="ti-google"></i></Link></li>
-                                        <li><Link href="/volunteer"><i className="ti-instagram"></i></Link></li>
+                                        <li><Link href="/volunteer" passHref><i className="ti-facebook"></i></Link></li>
+                                        <li><Link href="/volunteer" passHref><i className="ti-twitter"></i></Link></li>
+                                        <li><Link href="/volunteer" passHref><i className="ti-google"></i></Link></li>
+                                        <li><Link href="/volunteer" passHref><i className="ti-instagram"></i></Link></li>
                                     </ul>
                                 </div>
                             </div>
@@ -66,10 +66,10 @@ const TeamSection = (props) => {
                                     <h2><Link href="/volunteer">Juliya Jossoy</Link></h2>
                                     <span>Volunteer</span>
                                     <ul>
-                                        <li><Link href="/volunteer"><i className="ti-facebook"></i></Link></li>
-                                        <li><Link href="/volunteer"><i className="ti-twitter"></i></Link></li>
-                                        <li><Link href="/volunteer"><i className="ti-google"></i></Link></li>
-                                        <li><Link href="/volunteer"><i className="ti-instagram"></i></Link></li>
+                                        <li><Link href="/volunteer" passHref><i className="ti-facebook"></i></Link></li>
+                                        <li><Link href="/volunteer" passHref><i className="ti-twitter"></i></Link></li>
+                                        <li><Link href="/volunteer" passHref><i className="ti-google"></i></Link></li>
+                                        <li><Link href="/volunteer" passHref><i className="ti-instagram"></i></Link></li>
                                     </ul>
                                 </div>
                             </div>
