@@ -1,7 +1,7 @@
 import React from 'react'
-import './style.css'
 import vimg from '../../public/images/about-vedio.jpg'
 import VideoModal from '../../components/ModalVideo'
+import Image from 'next/image'
 
 const VedioCta = (props) => {
     return(
@@ -11,7 +11,7 @@ const VedioCta = (props) => {
                     <div className="col-lg-8 offset-lg-2">
                         <div className="wpo-about-video-item">
                             <div className="wpo-about-video-img">
-                                <img src={vimg} alt=""/>
+                                <Image src={vimg} alt=""/>
                                 <div className="entry-media video-holder video-btn2">
                                     <VideoModal/>
                                 </div>
