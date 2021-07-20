@@ -17,8 +17,8 @@ const HomePage = () => {
             <Header />
             <Hero />
             <Mission />
-            {/* <About/>
-            <CaseSlide/>
+            <About/>
+            {/* <CaseSlide/>
             <CounterSection/>
             <TeamSection/>
             <WorldSection/>

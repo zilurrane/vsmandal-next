@@ -1,13 +1,14 @@
+import Link from 'next/link'
+import Image from 'next/image'
 import React from 'react'
 import abimg from '../../public/images/about3.png'
 import VideoModal from '../ModalVideo'
-import './About.module.css'
 
 const About = (props) => {
-    const ClickHandler = () =>{
+    const ClickHandler = () => {
         window.scrollTo(10, 0);
-     }
-    return(
+    }
+    return (
         <div className="wpo-about-area section-padding">
             <div className="container">
                 <div className="row">
@@ -20,10 +21,12 @@ const About = (props) => {
                             <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there.</p>
                             <p>Thing embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, </p>
                             <div className="btns">
-                                <a href="/donate" className="theme-btn" onClick={ClickHandler}>Donate Now</a>
+                                <Link href="/donate">
+                                    <a href="/donate" className="theme-btn" onClick={ClickHandler}>Donate Now</a>
+                                </Link>
                                 <ul>
                                     <li className="video-holder">
-                                        <VideoModal/>
+                                        <VideoModal />
                                     </li>
                                     <li className="video-text">
                                         Watch Our Video
@@ -34,7 +37,7 @@ const About = (props) => {
                     </div>
                     <div className="col-lg-6 col-md-12 colsm-12">
                         <div className="wpo-about-img-3">
-                            <img src={abimg} alt=""/>
+                            <Image src={abimg} alt="" />
                         </div>
                     </div>
                 </div>
