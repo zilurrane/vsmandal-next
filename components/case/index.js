@@ -4,12 +4,11 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Link from 'next/link'
+import Image from 'next/image'
 
 import cs1 from '../../public/images/case/img-1.png'
 import cs2 from '../../public/images/case/img-2.png'
 import cs3 from '../../public/images/case/img-3.png'
-
-import './Case.module.css'
 
 class CaseSlide extends Component {
 
@@ -77,7 +76,7 @@ class CaseSlide extends Component {
                                 <div className="wpo-case-single">
                                     <div className="wpo-case-item">
                                         <div className="wpo-case-img">
-                                            <img src={cs1} alt="" />
+                                            <Image src={cs1} alt="" />
                                         </div>
                                         <div className="wpo-case-content">
                                             <div className="wpo-case-text-top">
@@ -108,7 +107,7 @@ class CaseSlide extends Component {
                                 <div className="wpo-case-single">
                                     <div className="wpo-case-item">
                                         <div className="wpo-case-img">
-                                            <img src={cs2} alt="" />
+                                            <Image src={cs2} alt="" />
                                         </div>
                                         <div className="wpo-case-content">
                                             <div className="wpo-case-text-top">
@@ -139,7 +138,7 @@ class CaseSlide extends Component {
                                 <div className="wpo-case-single">
                                     <div className="wpo-case-item">
                                         <div className="wpo-case-img">
-                                            <img src={cs3} alt="" />
+                                            <Image src={cs3} alt="" />
                                         </div>
                                         <div className="wpo-case-content">
                                             <div className="wpo-case-text-top">
@@ -170,7 +169,7 @@ class CaseSlide extends Component {
                                 <div className="wpo-case-single">
                                     <div className="wpo-case-item">
                                         <div className="wpo-case-img">
-                                            <img src={cs1} alt="" />
+                                            <Image src={cs1} alt="" />
                                         </div>
                                         <div className="wpo-case-content">
                                             <div className="wpo-case-text-top">
