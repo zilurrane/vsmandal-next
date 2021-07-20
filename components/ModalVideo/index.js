@@ -22,10 +22,10 @@ class VideoModal extends React.Component {
   render() {
     return (
       <div>
-        {
+        {/* {
           ModalVideo &&
           <ModalVideo channel='youtube' isOpen={this.state.isOpen} videoId='iSbzh0r9IV4' onClose={() => this.setState({ isOpen: false })} />
-        }
+        } */}
         <div className="video-btn">
           <ul>
             <li>
