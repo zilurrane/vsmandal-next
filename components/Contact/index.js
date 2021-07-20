@@ -1,10 +1,9 @@
 import React from 'react';
-import ContactForm from '../ContactFrom'
-import './style.scss'
+import ContactForm from '../ContactForm'
 
 const Contactpage = () => {
 
-    return(
+    return (
         <section className="wpo-contact-form-map section-padding">
             <div className="container">
                 <div className="row">
@@ -13,12 +12,12 @@ const Contactpage = () => {
                             <div className="col col-lg-6 col-md-6 col-sm-12 col-12">
                                 <div className="contact-form">
                                     <h2>Get In Touch</h2>
-                                    <ContactForm/>
+                                    <ContactForm />
                                 </div>
                             </div>
                             <div className="col col-lg-6 col-md-6 col-sm-12 col-12">
                                 <div className="contact-map">
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15070.477255923242!2d73.0889436!3d19.2118227!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1b809ed224efb4be!2sVivekanand%20Seva%20Mandal!5e0!3m2!1sen!2sin!4v1624082905551!5m2!1sen!2sin"></iframe>
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15070.477255923242!2d73.0889436!3d19.2118227!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1b809ed224efb4be!2sVivekanand%20Seva%20Mandal!5e0!3m2!1sen!2sin!4v1624082905551!5m2!1sen!2sin"></iframe>
                                 </div>
                             </div>
                         </div>
@@ -69,8 +68,8 @@ const Contactpage = () => {
                 </div>
             </div>
         </section>
-     )
-        
+    )
+
 }
 
 export default Contactpage;
