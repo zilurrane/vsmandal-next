@@ -12,7 +12,7 @@ const About = (props) => {
         <div className="wpo-about-area section-padding">
             <div className="container">
                 <div className="row">
-                    <div className="col-lg-6 col-md-12 colsm-12">
+                    <div className="col-lg-6 col-md-12 col-sm-12">
                         <div className="wpo-about-text">
                             <div className="wpo-section-title">
                                 <span>What We Do?</span>
@@ -35,9 +35,9 @@ const About = (props) => {
                             </div>
                         </div>
                     </div>
-                    <div className="col-lg-6 col-md-12 colsm-12">
-                        <div className="wpo-about-img-3">
-                            <Image src={abimg} alt="" />
+                    <div className="col-lg-6 col-md-12 col-sm-12">
+                        <div>
+                            <Image src={abimg} layout="responsive" alt="" />
                         </div>
                     </div>
                 </div>
