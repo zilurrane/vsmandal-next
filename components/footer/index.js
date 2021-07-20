@@ -1,7 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import Logo from '../../public/images/logo-2.png'
 import Newsletter from '../Newsletter'
 import n1 from '../../public/images/footer/img-1.jpg'
 import n2 from '../../public/images/footer/img-2.jpg'
@@ -20,9 +19,6 @@ const Footer = (props) => {
                     <div className="row">
                         <div className="col col-lg-3 col-md-6 col-sm-12 col-12">
                             <div className="widget about-widget">
-                                <div className="logo widget-title">
-                                    <Image src={Logo} alt="" />
-                                </div>
                                 <p>Build and Earn with your online store with lots of cool and exclusive wpo-features </p>
                                 <ul>
                                     <li><Link onClick={ClickHandler} href="/home"><i className="ti-facebook"></i></Link></li>
