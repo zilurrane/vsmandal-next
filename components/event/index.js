@@ -3,8 +3,7 @@ import pr1 from '../../public/images/event/img-1.jpg'
 import pr2 from '../../public/images/event/img-2.jpg'
 import pr3 from '../../public/images/event/img-3.jpg'
 import Link from 'next/link'
-
-import './Event.module.css'
+import Image from 'next/image'
 
 const EventSection = (props) => {
 
@@ -27,7 +26,7 @@ const EventSection = (props) => {
                     <div className="col-lg-4 col-md-6 col-sm-12 col-12 custom-grid">
                         <div className="wpo-event-item">
                             <div className="wpo-event-img">
-                                <img src={pr1} alt=""/>
+                                <Image src={pr1} alt=""/>
                                 <div className="thumb-text">
                                     <span>25</span>
                                     <span>NOV</span>
@@ -47,7 +46,7 @@ const EventSection = (props) => {
                     <div className="col-lg-4 col-md-6 col-sm-12 col-12 custom-grid">
                         <div className="wpo-event-item">
                             <div className="wpo-event-img">
-                                <img src={pr2} alt=""/>
+                                <Image src={pr2} alt=""/>
                                 <div className="thumb-text-2">
                                     <span>25</span>
                                     <span>NOV</span>
@@ -67,7 +66,7 @@ const EventSection = (props) => {
                     <div className="col-lg-4 col-md-6 col-sm-12 col-12 custom-grid">
                         <div className="wpo-event-item">
                             <div className="wpo-event-img">
-                                <img src={pr3} alt=""/>
+                                <Image src={pr3} alt=""/>
                                 <div className="thumb-text-3">
                                     <span>25</span>
                                     <span>NOV</span>

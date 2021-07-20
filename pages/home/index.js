@@ -10,6 +10,7 @@ import CtaSection from '../../components/cta'
 import WorldSection from '../../components/world'
 import BlogSection from '../../components/BlogSection'
 import Header from '../../components/header'
+import Footer from '../../components/footer'
 
 const HomePage = () => {
     return (
@@ -17,14 +18,15 @@ const HomePage = () => {
             <Header />
             <Hero />
             <Mission />
-            <About/>
-            <CaseSlide/>
-            {/* <CounterSection/>
-            <TeamSection/>
-            <WorldSection/>
-            <EventSection/>
-            <CtaSection/>
-            <BlogSection/> */}
+            <About />
+            <CaseSlide />
+            <CounterSection />
+            <TeamSection />
+            <WorldSection />
+            <EventSection />
+            <CtaSection />
+            <BlogSection />
+            <Footer />
         </Fragment>
     )
 };

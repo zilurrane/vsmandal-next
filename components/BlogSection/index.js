@@ -3,8 +3,7 @@ import blog1 from '../../public/images/blog/img-1.jpg'
 import blog2 from '../../public/images/blog/img-2.jpg'
 import blog3 from '../../public/images/blog/img-3.jpg'
 import Link from 'next/link'
-
-import './BlogSection.module.css'
+import Image from 'next/image'
 
 const BlogSection = (props) => {
 
@@ -26,7 +25,7 @@ const BlogSection = (props) => {
                     <div className="col-lg-4 col-md-6 col-sm-12 col-12 custom-grid">
                         <div className="wpo-blog-item">
                             <div className="wpo-blog-img">
-                                <img src={blog1} alt="" />
+                                <Image src={blog1} alt="" />
                             </div>
                             <div className="wpo-blog-content">
                                 <span>Nov 24, 2020</span>
@@ -37,7 +36,7 @@ const BlogSection = (props) => {
                     <div className="col-lg-4 col-md-6 col-sm-12 col-12 custom-grid">
                         <div className="wpo-blog-item">
                             <div className="wpo-blog-img">
-                                <img src={blog2} alt="" />
+                                <Image src={blog2} alt="" />
                             </div>
                             <div className="wpo-blog-content">
                                 <span>Nov 24, 2020</span>
@@ -48,7 +47,7 @@ const BlogSection = (props) => {
                     <div className="col-lg-4 col-md-6 col-sm-12 col-12 custom-grid">
                         <div className="wpo-blog-item">
                             <div className="wpo-blog-img">
-                                <img src={blog3} alt="" />
+                                <Image src={blog3} alt="" />
                             </div>
                             <div className="wpo-blog-content">
                                 <span>Nov 24, 2020</span>

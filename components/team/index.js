@@ -1,6 +1,6 @@
 import React from 'react'
-import './Team.module.css'
 import Link from 'next/link'
+import Image from 'next/image'
 import tm1 from '../../public/images/team/team-1.jpg'
 import tm2 from '../../public/images/team/team-2.jpg'
 import tm3 from '../../public/images/team/team-3.jpg'
@@ -21,7 +21,7 @@ const TeamSection = (props) => {
                     <div className="col-lg-4 col-md-6 col-sm-12 col-12 custom-grid">
                         <div className="wpo-team-wrap">
                             <div className="wpo-team-img">
-                                <img src={tm1} alt=""/>
+                                <Image src={tm1} alt=""/>
                             </div>
                             <div className="wpo-team-content">
                                 <div className="wpo-team-text-sub">
@@ -40,7 +40,7 @@ const TeamSection = (props) => {
                     <div className="col-lg-4 col-md-6 col-sm-12 col-12 custom-grid">
                         <div className="wpo-team-wrap">
                             <div className="wpo-team-img">
-                                <img src={tm2} alt=""/>
+                                <Image src={tm2} alt=""/>
                             </div>
                             <div className="wpo-team-content">
                                 <div className="wpo-team-text-sub">
@@ -59,7 +59,7 @@ const TeamSection = (props) => {
                     <div className="col-lg-4 col-md-6 col-sm-12 col-12 custom-grid">
                         <div className="wpo-team-wrap">
                             <div className="wpo-team-img">
-                                <img src={tm3} alt=""/>
+                                <Image src={tm3} alt=""/>
                             </div>
                             <div className="wpo-team-content">
                                 <div className="wpo-team-text-sub">

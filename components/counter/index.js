@@ -1,5 +1,4 @@
 import React from 'react'
-import './Counter.module.css'
 
 const CounterSection = (props) => {
     return(

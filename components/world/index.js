@@ -1,7 +1,7 @@
 import React from 'react'
-import './World.module.css'
 import Link from 'next/link'
 import tm1 from '../../public/images/team/1.png'
+import Image from 'next/image'
 
 const WorldSection = (props) => {
 
@@ -16,9 +16,11 @@ const WorldSection = (props) => {
                         <div className="wpo-world-section">
                             <h2>Lets Chenge The World With Humanity</h2>
                             <Link onClick={ClickHandler} href="/Volunteer">
-                                <div>
-                                    <img src={tm1} alt="" />   Become A Volunteer
-                                </div>
+                                <a href="/Volunteer">
+                                    <div>
+                                        <Image src={tm1} alt="" />   Become A Volunteer
+                                    </div>
+                                </a>
                             </Link>
                         </div>
                     </div>
