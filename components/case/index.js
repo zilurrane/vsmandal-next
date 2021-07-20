@@ -97,7 +97,7 @@ class CaseSlide extends Component {
                                             </div>
                                             <div className="case-btn">
                                                 <ul>
-                                                    <li><Link onClick={ClickHandler} href="/case-single">Learn More</Link></li>
+                                                    <li><Link onClick={ClickHandler} href="/case-single">Get Details</Link></li>
                                                     <li><Link onClick={ClickHandler} href="/donate">Donate Now</Link></li>
                                                 </ul>
                                             </div>
@@ -128,7 +128,7 @@ class CaseSlide extends Component {
                                             </div>
                                             <div className="case-btn">
                                                 <ul>
-                                                    <li><Link onClick={ClickHandler} href="/case-single">Learn More</Link></li>
+                                                    <li><Link onClick={ClickHandler} href="/case-single">Get Details</Link></li>
                                                     <li><Link onClick={ClickHandler} href="/donate">Donate Now</Link></li>
                                                 </ul>
                                             </div>
@@ -159,7 +159,7 @@ class CaseSlide extends Component {
                                             </div>
                                             <div className="case-btn">
                                                 <ul>
-                                                    <li><Link onClick={ClickHandler} href="/case-single">Learn More</Link></li>
+                                                    <li><Link onClick={ClickHandler} href="/case-single">Get Details</Link></li>
                                                     <li><Link onClick={ClickHandler} href="/donate">Donate Now</Link></li>
                                                 </ul>
                                             </div>
@@ -190,7 +190,7 @@ class CaseSlide extends Component {
                                             </div>
                                             <div className="case-btn">
                                                 <ul>
-                                                    <li><Link onClick={ClickHandler} href="/case-single">Learn More</Link></li>
+                                                    <li><Link onClick={ClickHandler} href="/case-single">Get Details</Link></li>
                                                     <li><Link onClick={ClickHandler} href="/donate">Donate Now</Link></li>
                                                 </ul>
                                             </div>

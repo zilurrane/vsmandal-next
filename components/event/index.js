@@ -39,7 +39,7 @@ const EventSection = (props) => {
                                     <li><i className="fi flaticon-pin"></i>Newyork City</li>
                                 </ul>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                                <Link onClick={ClickHandler} href="/event-details">Learn More...</Link>
+                                <Link onClick={ClickHandler} href="/event-details">Get Details...</Link>
                             </div>
                         </div>
                     </div>
@@ -59,7 +59,7 @@ const EventSection = (props) => {
                                     <li><i className="fi flaticon-pin"></i>Newyork City</li>
                                 </ul>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                                <Link onClick={ClickHandler} href="/event-details">Learn More...</Link>
+                                <Link onClick={ClickHandler} href="/event-details">Get Details...</Link>
                             </div>
                         </div>
                     </div>
@@ -79,7 +79,7 @@ const EventSection = (props) => {
                                     <li><i className="fi flaticon-pin"></i>Newyork City</li>
                                 </ul>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                                <Link onClick={ClickHandler} href="/event-details">Learn More...</Link>
+                                <Link onClick={ClickHandler} href="/event-details">Get Details...</Link>
                             </div>
                         </div>
                     </div>
