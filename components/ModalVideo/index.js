@@ -1,5 +1,5 @@
 import React from 'react'
-let ModalVideo;
+import ModalVideo from 'react-modal-video'
 
 class VideoModal extends React.Component {
 
@@ -15,17 +15,12 @@ class VideoModal extends React.Component {
     this.setState({ isOpen: true })
   }
 
-  componentDidMount() {
-    ModalVideo = require('react-modal-video');
-  }
-
   render() {
     return (
       <div>
-        {/* {
-          ModalVideo &&
+        {
           <ModalVideo channel='youtube' isOpen={this.state.isOpen} videoId='iSbzh0r9IV4' onClose={() => this.setState({ isOpen: false })} />
-        } */}
+        }
         <div className="video-btn">
           <ul>
             <li>
