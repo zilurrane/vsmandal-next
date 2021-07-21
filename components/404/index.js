@@ -16,7 +16,7 @@ const Error = () => {
                             <div className="error-message">
                                 <h3>Oops! Page Not Found!</h3>
                                 <p>We’re sorry but we can’t seem to find the page you requested. This might be because you have typed the web address incorrectly.</p>
-                                <Link href="/home">
+                                <Link href="/">
                                     <a className="theme-btn-s4">Back to home</a>
                                 </Link>
                             </div>

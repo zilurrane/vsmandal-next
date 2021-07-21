@@ -6,6 +6,7 @@ import About from '../../components/about'
 import CaseSlide from '../../components/case'
 import CounterSection from '../../components/counter'
 import TeamSection from '../../components/team'
+import { getHeaderMenuJson } from '../../shared/api';
 
 const CasePage = () => {
     return (
@@ -20,4 +21,15 @@ const CasePage = () => {
         </Fragment>
     )
 };
+export async function getStaticProps() {
+    const data = await getHeaderMenuJson();
+    if (!data) {
+        return {
+            notFound: true,
+        }
+    }
+    return {
+        props: { menus: data },
+    }
+}
 export default CasePage;

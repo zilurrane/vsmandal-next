@@ -5,11 +5,8 @@ import Image from 'next/image'
 import HeaderTopbar from '../HeaderTopbar'
 import MobileMenu from '../../components/MobileMenu'
 
-const Header = () => {
-
-    const menus = [{ "id": 1, "title": "Home", "link": "\/" }, { "id": 2, "title": "About Us", "link": "\/about" }, { "id": 3, "title": "Projects", "link": "\/projects", "submenu": [{ "id": 31, "title": "Youth Empowerment", "link": "\/projects\/youth-empowerment", "submenu": [{ "id": 311, "title": "Library", "link": "\/projects\/youth-empowerment\/library" }, { "id": 312, "title": "IT Team", "link": "\/projects\/youth-empowerment\/it-team" }] }] }, { "id": 4, "title": "Events", "link": "\/events", "submenu": [{ "id": 41, "title": "Socio-Cultural", "link": "\/events\/socio-cultural", "submenu": [{ "id": 411, "title": "Swami Vivekanand Jayanti", "link": "\/events\/socio-cultural\/swami-vivekanand-jayanti" }, { "id": 412, "title": "Rashtrapujan", "link": "\/events\/socio-cultural\/rashtrapujan" }] }] }, { "id": 5, "title": "Contact", "link": "\/contact" }];
-    const currentLocation = '/home';
-
+const Header = ({ menus = [] }) => {
+    const currentLocation = '/';
     return (
         <div className="middle-header header-style-3">
             <HeaderTopbar />

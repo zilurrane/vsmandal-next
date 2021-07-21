@@ -9,6 +9,7 @@ import EventSection from '../components/event'
 import CtaSection from '../components/cta'
 import WorldSection from '../components/world'
 import BlogSection from '../components/BlogSection'
+import { getHeaderMenuJson } from '../shared/api';
 
 const HomePage = () => {
     return (
@@ -26,4 +27,15 @@ const HomePage = () => {
         </Fragment>
     )
 };
+export async function getStaticProps() {
+    const data = await getHeaderMenuJson();
+    if (!data) {
+        return {
+            notFound: true,
+        }
+    }
+    return {
+        props: { menus: data },
+    }
+}
 export default HomePage;

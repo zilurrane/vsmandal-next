@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react';
 import PageTitle from '../../components/pagetitle'
+import { getHeaderMenuJson } from '../../shared/api';
 
 const Projects = () => {
     return (
@@ -25,5 +26,15 @@ const Projects = () => {
         </Fragment>
     )
 };
-
+export async function getStaticProps() {
+    const data = await getHeaderMenuJson();
+    if (!data) {
+        return {
+            notFound: true,
+        }
+    }
+    return {
+        props: { menus: data },
+    }
+}
 export default Projects;

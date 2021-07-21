@@ -15,7 +15,7 @@ const CtaSection = (props) => {
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse </p>
                             <div className="btns">
                                 <Link href="/donate"><a onClick={ClickHandler} className="theme-btn">Donate Now</a></Link>
-                                <Link href="/home"><a onClick={ClickHandler} className="theme-btn-s2">Join Us Now</a></Link>
+                                <Link href="/"><a onClick={ClickHandler} className="theme-btn-s2">Join Us Now</a></Link>
                             </div>
                         </div>
                     </div>
