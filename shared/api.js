@@ -5,3 +5,9 @@ export const getHeaderMenuJson = async () => {
     const data = await res.json()
     return data;
 }
+
+export const getAllProjects = async () => {
+    const res = await fetch(`${API_BASE_URL}/projects`)
+    const data = await res.json()
+    return data;
+}

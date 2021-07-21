@@ -1,24 +1,38 @@
 import React, { Fragment } from 'react';
-import PageTitle from '../../components/pagetitle'
-import { getHeaderMenuJson } from '../../shared/api';
 
-const Projects = () => {
+import { getAllProjects, getHeaderMenuJson } from '../../shared/api';
+
+const Projects = ({ projects = [] }) => {
+    const sectionedProjects = projects.reduce((acc, project) => {
+        const sectionIndex = acc.indexOf((a) => a.section === project.section);
+        if (sectionIndex === -1) {
+            acc.push({ section: project.section, projects: [project] });
+            return acc;
+        }
+        acc[sectionIndex].projects.push(project);
+        return acc;
+    }, []);
     return (
         <Fragment>
-            <PageTitle pageTitle={'Project Management'} pagesub={'Handle Projects'} />
             <div className="wpo-donation-page-area section-padding">
                 <div className="container">
                     <div className="row">
-                        <div className="col-lg-8 offset-lg-2">
-                            <div className="wpo-donate-header">
-                                <h2>Projects</h2>
-                            </div>
-                            show add new project button
-                            <br />
-
-                            show table below as:<br />
-                            project name     description     other deatils(if needed)    edit and delete button for each project
-                            {/* <Table /> with column names to be passed , which  buttons to show that to be passed */}
+                        <div className="col-md-12">
+                            <ol>
+                                {
+                                    sectionedProjects.map(section =>
+                                    (<li key={section.section}>
+                                        <h3>{section.section}</h3>
+                                        <ol>{section.projects.map((project) => (
+                                            <li key={project.title}>
+                                                {project.title}
+                                            </li>
+                                        ))}
+                                        </ol>
+                                    </li>)
+                                    )
+                                }
+                            </ol>
                         </div>
                     </div>
                 </div>
@@ -27,14 +41,15 @@ const Projects = () => {
     )
 };
 export async function getStaticProps() {
-    const data = await getHeaderMenuJson();
-    if (!data) {
+    const menus = await getHeaderMenuJson();
+    const projects = await getAllProjects()
+    if (!menus || !projects) {
         return {
             notFound: true,
         }
     }
     return {
-        props: { menus: data },
+        props: { menus, projects },
     }
 }
 export default Projects;
