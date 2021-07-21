@@ -42,7 +42,7 @@ const Projects = ({ projects = [] }) => {
 };
 export async function getStaticProps() {
     const menus = await getHeaderMenuJson();
-    const projects = await getAllProjects()
+    const projects = await getAllProjects();
     if (!menus || !projects) {
         return {
             notFound: true,

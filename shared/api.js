@@ -11,3 +11,9 @@ export const getAllProjects = async () => {
     const data = await res.json()
     return data;
 }
+
+export const getProjectById = async (id) => {
+    const res = await fetch(`${API_BASE_URL}/projects/${id}`)
+    const data = await res.json()
+    return data;
+}
