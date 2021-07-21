@@ -1,12 +1,9 @@
 import React, { Fragment } from 'react';
-import Header from '../../components/header';
-import Footer from '../../components/footer';
 import PageTitle from '../../components/pagetitle'
 
 const Projects = () => {
     return (
         <Fragment>
-            <Header />
             <PageTitle pageTitle={'Project Management'} pagesub={'Handle Projects'} />
             <div className="wpo-donation-page-area section-padding">
                 <div className="container">
@@ -25,7 +22,6 @@ const Projects = () => {
                     </div>
                 </div>
             </div>
-            <Footer />
         </Fragment>
     )
 };

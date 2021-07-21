@@ -4,6 +4,8 @@ import 'react-modal-video/scss/modal-video.scss';
 import '../public/css/font-awesome.min.css';
 import '../public/css/themify-icons.css';
 import '../public/css/flaticon.css';
+import Header from '../components/header'
+import Footer from '../components/footer';
 
 function MyApp({ Component, pageProps }) {
 
@@ -12,7 +14,9 @@ function MyApp({ Component, pageProps }) {
       title="Vivekanand Seva Mandal"
       description="Vivekanand Seva Mandal is basically a group of young philanthropists involving themselves in a Rural Development Programs with a view of social development while pursuing their own academic/ professional activities."
     />
+    <Header />
     <Component {...pageProps} />
+    <Footer />
   </>
 }
 
