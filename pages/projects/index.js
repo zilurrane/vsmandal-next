@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React, { Fragment } from 'react';
 
 import { getAllProjects, getHeaderMenuJson } from '../../shared/api';
@@ -25,7 +26,9 @@ const Projects = ({ projects = [] }) => {
                                         <h3>{section.section}</h3>
                                         <ol>{section.projects.map((project) => (
                                             <li key={project.title}>
-                                                {project.title}
+                                                <Link href={`/projects/${project.title}/${project.id}`}>
+                                                    {project.title}
+                                                </Link>
                                             </li>
                                         ))}
                                         </ol>
