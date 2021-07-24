@@ -2,6 +2,9 @@ import Link from 'next/link';
 import React, { Fragment } from 'react';
 
 import { getAllProjects, getHeaderMenuJson } from '../../shared/api';
+import PageTitle from '../../components/pagetitle'
+import Mission from '../../components/mission'
+import ProjectsBlocks from '../../components/Casesection'
 
 const Projects = ({ projects = [] }) => {
     const sectionedProjects = projects.reduce((acc, project) => {
@@ -15,7 +18,10 @@ const Projects = ({ projects = [] }) => {
     }, []);
     return (
         <Fragment>
-            <div className="wpo-donation-page-area section-padding">
+            <PageTitle pageTitle={'Our Projects'} pagesub={'Projects'}/> 
+            <Mission subclass={'section-padding'}/>
+            <ProjectsBlocks/>
+            {/* <div className="wpo-donation-page-area section-padding">
                 <div className="container">
                     <div className="row">
                         <div className="col-md-12">
@@ -39,7 +45,7 @@ const Projects = ({ projects = [] }) => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
         </Fragment>
     )
 };
