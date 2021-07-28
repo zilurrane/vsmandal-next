@@ -1,0 +1,171 @@
+.wpo-cta-area-mod {
+  padding: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: url("../../public/images/cta.jpg") no-repeat center center / cover;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+
+  &:before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: -1;
+  }
+
+  .wpo-cta-text-mod {
+    max-width: 715px;
+    margin: auto;
+    text-align: center;
+    h2 {
+      font-size: 45px;
+      color: #fff;
+      margin-top: 0;
+
+      @media (max-width: 992px) {
+        font-size: 30px;
+      }
+
+      @media (max-width: 590px) {
+        font-size: 33px;
+      }
+    }
+    p {
+      color: #dbdbdb;
+      margin-bottom: 40px;
+      margin-top: 20px;
+      // TODO: why implemented twice
+      color: #fff;
+    }
+
+    .theme-btn-mod {
+      margin-right: 15px;
+      background: #fff;
+      border: 1px solid #fff;
+      color: #333;
+
+      &:hover {
+        color: #333;
+        // TODO: why implemented twice
+
+        color: #fff;
+        background: transparent;
+      }
+
+      @media (max-width: 450px) {
+        margin-right: 4px;
+      }
+    }
+    .theme-btn-s2-mod {
+      &:hover {
+        color: #333;
+        background: #fff;
+      }
+    }
+  }
+}
+// .wpo-cta-area,
+// .wpo-cta-area-2 {
+//     padding: 100px;
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//     background: url('../public/images/cta.jpg') no-repeat center center / cover;
+//     align-items: center;
+//     position: relative;
+//     z-index: 1;
+// }
+
+// .wpo-cta-area:before,
+// .wpo-cta-area-2:before {
+//     position: absolute;
+//     content: "";
+//     left: 0;
+//     top: 0;
+//     width: 100%;
+//     height: 100%;
+//     background: rgba(0, 0, 0, .7);
+//     z-index: -1;
+// }
+
+// .wpo-cta-text {
+//     max-width: 715px;
+//     margin: auto;
+//     text-align: center;
+// }
+
+// .wpo-cta-text h2 {
+//     font-size: 45px;
+//     color: #fff;
+//     margin-top: 0;
+// }
+
+// TODO: why implemented twice
+// .wpo-cta-text p {
+//     color: #dbdbdb;
+//     margin-bottom: 40px;
+//     margin-top: 20px;
+// }
+
+// .wpo-cta-text .theme-btn {
+//     margin-right: 15px;
+// }
+
+// @media(max-width: 992px) {
+//     .wpo-cta-text h2 {
+//         font-size: 30px;
+//     }
+// }
+
+// @media(max-width: 590px) {
+
+//     .wpo-cta-text h2 {
+//         font-size: 33px;
+//     }
+// }
+
+// TODO: why implemented twice
+// .wpo-cta-text p {
+//   color: #fff;
+// }
+
+// .wpo-cta-text .theme-btn {
+//   background: #fff;
+//   border: 1px solid #fff;
+//   color: #333;
+// }
+
+// TODO: why implemented twice
+
+// .wpo-cta-text .theme-btn:hover {
+//   color: #333;
+// }
+
+// .wpo-cta-text .theme-btn-s2:hover {
+//   color: #333;
+//   background: #fff;
+// }
+
+// TODO: why implemented twice
+
+// .wpo-cta-text .theme-btn:hover {
+//   color: #fff;
+//   background: transparent;
+// }
+
+// @media (max-width: 450px) {
+//   .wpo-cta-text .theme-btn {
+//     margin-right: 4px;
+//   }
+// }
+
+// ** styles not applicable
+// .wpo-cta-area-2:before {
+//     background: rgba(8, 204, 127, 0.84);
+//   }

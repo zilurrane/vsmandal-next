@@ -1,35 +1,44 @@
-import React from 'react'
-import ModalVideo from 'react-modal-video'
+import React from "react";
+import ModalVideo from "react-modal-video";
 
 class VideoModal extends React.Component {
-
   constructor() {
-    super()
+    super();
     this.state = {
-      isOpen: false
-    }
-    this.openModal = this.openModal.bind(this)
+      isOpen: false,
+    };
+    this.openModal = this.openModal.bind(this);
   }
 
   openModal() {
-    this.setState({ isOpen: true })
+    this.setState({ isOpen: true });
   }
 
   render() {
     return (
       <div>
         {
-          <ModalVideo channel='youtube' isOpen={this.state.isOpen} videoId='iSbzh0r9IV4' onClose={() => this.setState({ isOpen: false })} />
+          <ModalVideo
+            channel="youtube"
+            isOpen={this.state.isOpen}
+            videoId="iSbzh0r9IV4"
+            onClose={() => this.setState({ isOpen: false })}
+          />
         }
-        <div className="video-btn">
+        <div className={`video-btn`}>
           <ul>
             <li>
-              <button className="wrap" onClick={this.openModal}><i className="fi flaticon-play-button-2" aria-hidden="true"></i></button>
+              <button className={`wrap`} onClick={this.openModal}>
+                <i
+                  className={`fi flaticon-play-button-2`}
+                  aria-hidden="true"
+                ></i>
+              </button>
             </li>
           </ul>
         </div>
       </div>
-    )
+    );
   }
 }
 

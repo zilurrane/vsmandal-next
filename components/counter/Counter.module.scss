@@ -1,0 +1,193 @@
+.wpo-counter-area-mod {
+  padding: 100px 0;
+  background: url("../../public/images/counter/img-1.png") no-repeat center
+    center / cover;
+  position: relative;
+
+  &:before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(6, 34, 101, 0.85);
+  }
+  .wpo-counter-grids-mod .grid-mod {
+    width: 24%;
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+
+    @media (max-width: 1200px) {
+      width: 23%;
+    }
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 15px;
+      right: 0;
+      width: 1px;
+      height: 70px;
+      background: #636363;
+    }
+    &:last-child:before {
+      display: none;
+    }
+    p {
+      font-size: 18px;
+      font-weight: normal;
+      color: #999;
+      padding-top: 5px;
+      margin-bottom: 0;
+    }
+    h2 {
+      font-size: 60px;
+      font-weight: 600;
+      color: #fff;
+      margin: 0;
+      line-height: 40px;
+      margin-top: 8px;
+      padding-bottom: 15px;
+
+      @media (max-width: 992px) {
+        font-size: 35px;
+      }
+    }
+  }
+
+  .odometer-auto-theme-mod,
+  .odometer-theme-default-mod {
+    line-height: 0.8em;
+  }
+}
+// .wpo-counter-area,
+// .wpo-counter-style-2 {
+//     padding: 100px 0;
+//     background: url('../public/images/counter/img-1.png') no-repeat center center / cover;
+//     position: relative;
+// }
+
+// .wpo-counter-area:before,
+// .wpo-counter-style-2:before {
+//   position: absolute;
+//   content: "";
+//   left: 0;
+//   top: 0;
+//   width: 100%;
+//   height: 100%;
+//   background: rgba(6, 34, 101, 0.85);
+// }
+
+// .wpo-counter-area .wpo-counter-grids .grid,
+// .wpo-counter-style-2 .wpo-counter-grids .grid {
+//   width: 24%;
+//   float: left;
+//   margin-right: 10px;
+//   margin-bottom: 10px;
+//   text-align: center;
+//   position: relative;
+// }
+
+// .wpo-counter-area .wpo-counter-grids .grid:before,
+// .wpo-counter-style-2 .wpo-counter-grids .grid:before {
+//   content: "";
+//   position: absolute;
+//   top: 15px;
+//   right: 0;
+//   width: 1px;
+//   height: 70px;
+//   background: #636363;
+// }
+
+// .wpo-counter-area .wpo-counter-grids .grid:last-child:before,
+// .wpo-counter-style-2 .wpo-counter-grids .grid:last-child:before {
+//   display: none;
+// }
+
+// .wpo-counter-area .wpo-counter-grids .grid p,
+// .wpo-counter-style-2 .wpo-counter-grids .grid p {
+//   font-size: 18px;
+//   font-weight: normal;
+//   color: #999;
+//   padding-top: 5px;
+//   margin-bottom: 0;
+// }
+
+// .wpo-counter-area .wpo-counter-grids,
+// .wpo-counter-style-2 .wpo-counter-grids {
+//   overflow: hidden;
+//   position: relative;
+// }
+
+// .wpo-counter-area .odometer.odometer-auto-theme,
+// .wpo-counter-area .odometer.odometer-theme-default,
+// .wpo-counter-style-2 .odometer.odometer-auto-theme,
+// .wpo-counter-style-2 .odometer.odometer-theme-default {
+//   line-height: 0.8em;
+// }
+
+// .wpo-counter-area .wpo-counter-grids .grid h2,
+// .wpo-counter-style-2 .wpo-counter-grids .grid h2 {
+//   font-size: 60px;
+//   font-weight: 600;
+//   color: #fff;
+//   margin: 0;
+//   line-height: 40px;
+//   margin-top: 8px;
+//   padding-bottom: 15px;
+// }
+
+// @media (max-width: 1200px) {
+//   .wpo-counter-area .wpo-counter-grids .grid,
+//   .wpo-counter-style-2 .wpo-counter-grids .grid {
+//     width: 23%;
+//   }
+// }
+
+// @media (max-width: 992px) {
+//   .wpo-counter-area .wpo-counter-grids .grid h2,
+//   .wpo-counter-style-2 .wpo-counter-grids .grid h2 {
+//     font-size: 35px;
+//   }
+// }
+
+
+
+
+// ** styles not applicable
+// .wpo-counter-style-2-mod {
+//   background: #fff;
+// }
+
+// .wpo-counter-style-2:before {
+//   display: none;
+// }
+
+// .wpo-counter-style-2 {
+//   border-bottom: 1px solid #f5f5f5;
+// }
+
+// .wpo-counter-style-2 .grid:nth-child(1) h2 {
+//   color: #00c0d6;
+// }
+
+// .wpo-counter-style-2 .grid:nth-child(2) h2 {
+//   color: var(--primary);
+// }
+
+// .wpo-counter-style-2 .grid:nth-child(3) h2 {
+//   color: #8768f7;
+// }
+
+// .wpo-counter-style-2 .grid:nth-child(4) h2 {
+//   color: #fc83bf;
+// }
+
+// .wpo-counter-style-2 .wpo-counter-grids .grid:before {
+//   background: #ebebeb;
+// }

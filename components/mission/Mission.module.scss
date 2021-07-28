@@ -1,0 +1,147 @@
+@import "../../styles/base.scss";
+
+.wpo-mission-area-mod {
+  background: #f7fbfe;
+  padding-bottom: 100px;
+
+  @media (max-width: 992px) {
+    padding-bottom: 60px;
+  }
+  .wpo-mission-wrap-mod {
+    margin-top: 10px;
+
+    .wpo-mission-item-mod {
+      text-align: center;
+
+      background: #fff;
+      box-shadow: 0px 1px 40px 0px rgba(40, 63, 116, 0.1);
+      padding: 50px 30px;
+
+      @media (max-width: 1199px) {
+        padding: 50px 20px;
+      }
+
+      @media (max-width: 992px) {
+        margin-bottom: 30px;
+      }
+      h2 {
+        font-size: 22px;
+        font-weight: 500;
+        margin-top: 20px;
+        margin-bottom: 20px;
+
+        @media (max-width: 1199px) {
+          font-size: 20px;
+        }
+      }
+
+      p {
+        max-width: 250px;
+        margin: auto;
+      }
+
+      .wpo-mission-icon-5-mod,
+      .wpo-mission-icon-6-mod,
+      .wpo-mission-icon-7-mod,
+      .wpo-mission-icon-8-mod {
+        font-size: 45px;
+        width: 70px;
+        height: 70px;
+        line-height: 65px;
+        background: $primary;
+        border-radius: 50%;
+        margin: auto;
+      }
+    }
+  }
+}
+// .wpo-mission-area {
+//     background: #f7fbfe;
+//     padding-bottom: 100px;
+// }
+
+// .wpo-mission-wrap {
+//     margin-top: 10px;
+// }
+
+// .wpo-mission-item {
+//     text-align: center;
+// }
+
+// .wpo-mission-item h2 {
+//     font-size: 22px;
+//     font-weight: 500;
+//     margin-top: 20px;
+//     margin-bottom: 20px;
+// }
+
+// .wpo-mission-item p {
+//     max-width: 250px;
+//     margin: auto;
+// }
+
+// @media (max-width: 992px) {
+//   .wpo-mission-item {
+//     margin-bottom: 30px;
+//   }
+
+//   .wpo-mission-area-2 {
+//     padding-bottom: 60px;
+//   }
+
+//   .wpo-mission-area {
+//     padding-bottom: 60px;
+//   }
+// }
+
+// .wpo-mission-icon-5,
+// .wpo-mission-icon-6,
+// .wpo-mission-icon-7,
+// .wpo-mission-icon-8 {
+//   font-size: 45px;
+//   width: 70px;
+//   height: 70px;
+//   line-height: 65px;
+//   background: var(--primary);
+//   border-radius: 50%;
+//   margin: auto;
+// }
+
+// .wpo-mission-item {
+//   background: #fff;
+//   box-shadow: 0px 1px 40px 0px rgba(40, 63, 116, 0.1);
+//   padding: 50px 30px;
+// }
+
+// @media (max-width: 1199px) {
+//   .wpo-mission-item {
+//     padding: 50px 20px;
+//   }
+
+//   .wpo-mission-item h2 {
+//     font-size: 20px;
+//   }
+// }
+
+// ** styles not applicable
+// .wpo-mission-icon .fi:before,
+// .wpo-mission-icon-2 .fi:before,
+// .wpo-mission-icon-3 .fi:before,
+// .wpo-mission-icon-4 .fi:before {
+//     font-size: 80px;
+//     background-image: linear-gradient(#46ccd7, #01a8d5);
+//     -webkit-background-clip: text;
+//     -webkit-text-fill-color: transparent;
+// }
+
+// .wpo-mission-icon-2 .fi:before {
+//     background-image: linear-gradient(#ffac77, #ff7d90);
+// }
+
+// .wpo-mission-icon-3 .fi:before {
+//     background-image: linear-gradient(#be68fe, #6d6af4);
+// }
+
+// .wpo-mission-icon-4 .fi:before {
+//     background-image: linear-gradient(#fbaddc, #fc7cb8);
+// }

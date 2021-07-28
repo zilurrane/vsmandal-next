@@ -851,3 +851,113 @@ hero-style3
     margin-left: 0;
     font-weight: 700;
 }
+
+
+
+
+
+
+
+// ** scss conversion
+// .hero {
+//     position: relative;
+//     height: 100vh;
+//     /** slider controls **/
+//     /*** hero slider animation ***/
+  
+//     @media (max-width: 767px) {
+//       min-height: 420px;
+//     }
+  
+//     &:hover {
+//       .slick-prev {
+//         left: 25px;
+//       }
+//     }
+  
+//     .slide {
+//       height: 100vh;
+//       position: relative;
+//       background-repeat: no-repeat;
+//       position: relative;
+  
+//       .slider-bg {
+//         display: none;
+//       }
+//       .container {
+//         height: 100%;
+//         display: table;
+//       }
+//       .row {
+//         display: table-cell;
+//         vertical-align: middle;
+//       }
+//     }
+  
+//     .slick-prev,
+//     .slick-next {
+//       background-color: rgba(247, 195, 63, 0.52);
+//       width: 55px;
+//       height: 55px;
+//       z-index: 10;
+//       border-radius: 50%;
+//       -webkit-transition: all 0.5s;
+//       -moz-transition: all 0.5s;
+//       -o-transition: all 0.5s;
+//       -ms-transition: all 0.5s;
+//       transition: all 0.5s;
+  
+//       &:hover {
+//         background-color: rgba(247, 195, 63);
+//       }
+  
+//       @media (max-width: 991px) {
+//         display: none !important;
+//       }
+//     }
+  
+//     .slick-prev {
+//       left: -100px;
+  
+//       &:before {
+//         font-family: "themify";
+//         content: "\e629";
+//         opacity: 1;
+//       }
+//     }
+  
+//     .slick-next {
+//       right: 25px;
+//     }
+  
+//     .slick-dots {
+//       bottom: 30px;
+  
+//       @media screen and (min-width: 992px) {
+//         display: none !important;
+//       }
+  
+//       li {
+//         margin: 0;
+//       }
+  
+//       button {
+//         background-color: #f6c23f;
+//         width: 14px;
+//         height: 14px;
+//         border: 2px solid #fff;
+//         border-radius: 50%;
+  
+//         &:before {
+//           display: none;
+//         }
+//       }
+//     }
+  
+//     .slide-caption {
+//       & > div {
+//         overflow: hidden;
+//       }
+//     }
+//   }
+  

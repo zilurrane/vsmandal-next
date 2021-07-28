@@ -1,0 +1,32 @@
+// theme colors
+$primary: #ff5900;
+$white: #fff;
+
+@keyframes rotating {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spineer {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 #c7c1ea;
+    box-shadow: 0 0 0 0 #c7c1ea;
+  }
+
+  70% {
+    -webkit-box-shadow: 0 0 0 20px rgba(1, 93, 199, 0);
+    box-shadow: 0 0 0 20px rgba(1, 93, 199, 0);
+  }
+
+  100% {
+    -webkit-box-shadow: 0 0 0 0 rgba(1, 93, 199, 0);
+    box-shadow: 0 0 0 0 rgba(1, 93, 199, 0);
+  }
+}
