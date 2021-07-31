@@ -25,11 +25,13 @@
     }
   }
 
-  .btns-mod ul {
-    margin-left: 20px;
+  .btns-mod {
+    ul {
+      margin-left: 20px;
+    }
   }
-  // * is applied because .wrap was in other component 
-  .video-holder-mod *{
+  // * is applied because .wrap was in other component
+  .video-holder-mod * {
     animation: none;
   }
 }
@@ -66,7 +68,6 @@
 // .wpo-about-text .video-holder .wrap {
 //   animation: none;
 // }
-
 
 // ** styles which were present but not applicable
 // .wpo-about-img img,

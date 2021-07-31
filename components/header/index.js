@@ -9,7 +9,9 @@ import styles from "./Header.module.scss";
 
 const Header = ({ menus = [] }) => {
   const currentLocation = "/";
-  const pathname = Router?.router?.pathname || "/";
+  const pathname = Router?.router?.pathname;
+  console.log(pathname);
+  
   return (
     <div
       className={`middle-header header-style-3 ${styles["middle-header-mod"]} ${styles["header-style-3-mod"]}`}

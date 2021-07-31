@@ -72,21 +72,37 @@ class CaseSlide extends Component {
           <div className={`wpo-case-wrap`}>
             <div className={`wpo-case-slider`}>
               <Slider {...settings}>
-                <div className={`wpo-case-single ${styles['wpo-case-single-mod']}`}>
-                  <div className={`wpo-case-item ${styles['wpo-case-item-mod']}`}>
-                    <div className={`wpo-case-img ${styles['wpo-case-img-mod']}`}>
+                <div
+                  className={`wpo-case-single ${styles["wpo-case-single-mod"]}`}
+                >
+                  <div
+                    className={`wpo-case-item ${styles["wpo-case-item-mod"]}`}
+                  >
+                    <div
+                      className={`wpo-case-img ${styles["wpo-case-img-mod"]}`}
+                    >
                       <Image src={cs1} alt="" />
                     </div>
-                    <div className={`wpo-case-content ${styles['wpo-case-content-mod']}`}>
-                      <div className={`wpo-case-text-top ${styles['wpo-case-text-top-mod']}`}>
+                    <div
+                      className={`wpo-case-content ${styles["wpo-case-content-mod"]}`}
+                    >
+                      <div
+                        className={`wpo-case-text-top ${styles["wpo-case-text-top-mod"]}`}
+                      >
                         <h2>Ensure Education for every poor children</h2>
                         <div
                           className={`progress-section ${styles["progress-section-mod"]}`}
                         >
                           <div className={`process`}>
-                            <div className={`progress ${styles['progress-mod']}`}>
-                              <div className={`progress-bar ${styles['progress-bar-mod']}`}>
-                                <div className={`progress-value ${styles['progress-value-mod']}`}>
+                            <div
+                              className={`progress ${styles["progress-mod"]}`}
+                            >
+                              <div
+                                className={`progress-bar ${styles["progress-bar-mod"]}`}
+                              >
+                                <div
+                                  className={`progress-value ${styles["progress-value-mod"]}`}
+                                >
                                   <span>65.5</span>%
                                 </div>
                               </div>
@@ -102,7 +118,7 @@ class CaseSlide extends Component {
                           </li>
                         </ul>
                       </div>
-                      <div className={`case-btn ${styles['case-btn-mod']}`}>
+                      <div className={`case-btn ${styles["case-btn-mod"]}`}>
                         <ul>
                           <li>
                             <Link onClick={ClickHandler} href="/case-single">
@@ -119,21 +135,37 @@ class CaseSlide extends Component {
                     </div>
                   </div>
                 </div>
-                <div className={`wpo-case-single ${styles['wpo-case-single-mod']}`}>
-                  <div className={`wpo-case-item ${styles['wpo-case-item-mod']}`}>
-                    <div className={`wpo-case-img ${styles['wpo-case-img-mod']}`}>
+                <div
+                  className={`wpo-case-single ${styles["wpo-case-single-mod"]}`}
+                >
+                  <div
+                    className={`wpo-case-item ${styles["wpo-case-item-mod"]}`}
+                  >
+                    <div
+                      className={`wpo-case-img ${styles["wpo-case-img-mod"]}`}
+                    >
                       <Image src={cs2} alt="" />
                     </div>
-                    <div className={`wpo-case-content ${styles['wpo-case-content-mod']}`}>
-                      <div className={`wpo-case-text-top ${styles['wpo-case-text-top-mod']}`}>
+                    <div
+                      className={`wpo-case-content ${styles["wpo-case-content-mod"]}`}
+                    >
+                      <div
+                        className={`wpo-case-text-top ${styles["wpo-case-text-top-mod"]}`}
+                      >
                         <h2>Supply drinking water for the people</h2>
                         <div
                           className={`progress-section ${styles["progress-section-mod"]}`}
                         >
                           <div className={`process`}>
-                            <div className={`progress ${styles['progress-mod']}`}>
-                              <div className={`progress-bar ${styles['progress-bar-mod']}`}>
-                                <div className={`progress-value ${styles['progress-value-mod']}`}>
+                            <div
+                              className={`progress ${styles["progress-mod"]}`}
+                            >
+                              <div
+                                className={`progress-bar ${styles["progress-bar-mod"]}`}
+                              >
+                                <div
+                                  className={`progress-value ${styles["progress-value-mod"]}`}
+                                >
                                   <span>40.5</span>%
                                 </div>
                               </div>
@@ -149,7 +181,7 @@ class CaseSlide extends Component {
                           </li>
                         </ul>
                       </div>
-                      <div className={`case-btn ${styles['case-btn-mod']}`}>
+                      <div className={`case-btn ${styles["case-btn-mod"]}`}>
                         <ul>
                           <li>
                             <Link onClick={ClickHandler} href="/case-single">
@@ -166,21 +198,37 @@ class CaseSlide extends Component {
                     </div>
                   </div>
                 </div>
-                <div className={`wpo-case-single ${styles['wpo-case-single-mod']}`}>
-                  <div className={`wpo-case-item ${styles['wpo-case-item-mod']}`}>
-                    <div className={`wpo-case-img ${styles['wpo-case-img-mod']}`}>
+                <div
+                  className={`wpo-case-single ${styles["wpo-case-single-mod"]}`}
+                >
+                  <div
+                    className={`wpo-case-item ${styles["wpo-case-item-mod"]}`}
+                  >
+                    <div
+                      className={`wpo-case-img ${styles["wpo-case-img-mod"]}`}
+                    >
                       <Image src={cs3} alt="" />
                     </div>
-                    <div className={`wpo-case-content ${styles['wpo-case-content-mod']}`}>
-                      <div className={`wpo-case-text-top ${styles['wpo-case-text-top-mod']}`}>
+                    <div
+                      className={`wpo-case-content ${styles["wpo-case-content-mod"]}`}
+                    >
+                      <div
+                        className={`wpo-case-text-top ${styles["wpo-case-text-top-mod"]}`}
+                      >
                         <h2>Providing Healthy Food for the children</h2>
                         <div
                           className={`progress-section ${styles["progress-section-mod"]}`}
                         >
                           <div className={`process`}>
-                            <div className={`progress ${styles['progress-mod']}`}>
-                              <div className={`progress-bar ${styles['progress-bar-mod']}`}>
-                                <div className={`progress-value ${styles['progress-value-mod']}`}>
+                            <div
+                              className={`progress ${styles["progress-mod"]}`}
+                            >
+                              <div
+                                className={`progress-bar ${styles["progress-bar-mod"]}`}
+                              >
+                                <div
+                                  className={`progress-value ${styles["progress-value-mod"]}`}
+                                >
                                   <span>80.5</span>%
                                 </div>
                               </div>
@@ -196,7 +244,7 @@ class CaseSlide extends Component {
                           </li>
                         </ul>
                       </div>
-                      <div className={`case-btn ${styles['case-btn-mod']}`}>
+                      <div className={`case-btn ${styles["case-btn-mod"]}`}>
                         <ul>
                           <li>
                             <Link onClick={ClickHandler} href="/case-single">
@@ -213,21 +261,37 @@ class CaseSlide extends Component {
                     </div>
                   </div>
                 </div>
-                <div className={`wpo-case-single ${styles['wpo-case-single-mod']}`}>
-                  <div className={`wpo-case-item ${styles['wpo-case-item-mod']}`}>
-                    <div className={`wpo-case-img ${styles['wpo-case-img-mod']}`}>
+                <div
+                  className={`wpo-case-single ${styles["wpo-case-single-mod"]}`}
+                >
+                  <div
+                    className={`wpo-case-item ${styles["wpo-case-item-mod"]}`}
+                  >
+                    <div
+                      className={`wpo-case-img ${styles["wpo-case-img-mod"]}`}
+                    >
                       <Image src={cs1} alt="" />
                     </div>
-                    <div className={`wpo-case-content ${styles['wpo-case-content-mod']}`}>
-                      <div className={`wpo-case-text-top ${styles['wpo-case-text-top-mod']}`}>
+                    <div
+                      className={`wpo-case-content ${styles["wpo-case-content-mod"]}`}
+                    >
+                      <div
+                        className={`wpo-case-text-top ${styles["wpo-case-text-top-mod"]}`}
+                      >
                         <h2>Ensure Education for every poor children</h2>
                         <div
                           className={`progress-section ${styles["progress-section-mod"]}`}
                         >
                           <div className={`process`}>
-                            <div className={`progress ${styles['progress-mod']}`}>
-                              <div className={`progress-bar ${styles['progress-bar-mod']}`}>
-                                <div className={`progress-value ${styles['progress-value-mod']}`}>
+                            <div
+                              className={`progress ${styles["progress-mod"]}`}
+                            >
+                              <div
+                                className={`progress-bar ${styles["progress-bar-mod"]}`}
+                              >
+                                <div
+                                  className={`progress-value ${styles["progress-value-mod"]}`}
+                                >
                                   <span>65.5</span>%
                                 </div>
                               </div>
@@ -243,7 +307,7 @@ class CaseSlide extends Component {
                           </li>
                         </ul>
                       </div>
-                      <div className={`case-btn ${styles['case-btn-mod']}`}>
+                      <div className={`case-btn ${styles["case-btn-mod"]}`}>
                         <ul>
                           <li>
                             <Link onClick={ClickHandler} href="/case-single">

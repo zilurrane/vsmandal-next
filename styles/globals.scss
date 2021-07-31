@@ -110,7 +110,9 @@ a {
 img {
   max-width: 100%;
 }
-.App {
+
+// replace it with #_next
+#__next {
   overflow: hidden;
   position: relative;
 }
