@@ -39,9 +39,10 @@ export default async (req, res) => {
   // email message is send and appropriate response is provided to the client
   transport.sendMail(mailOptions, function (err, info) {
     if (err) {
-      res.json({ "Error: ": err });
+      console.log(err);
+      res.json({ "error: ": "Something went wrong" });
     } else {
-      res.json({ "Success: ": info.response });
+      res.json({ success: "Email sent successfully" });
     }
   });
 };
