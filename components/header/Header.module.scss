@@ -33,12 +33,25 @@
   }
 
   nav {
+    > ul > li {
+      display: inline-block;
+      margin-right: -1px;
+      position: relative;
+    }
+
     ul {
       margin-top: -4px;
       text-align: right;
-      margin-bottom: 0;
 
       li {
+        &:hover > ul li {
+          margin-top: 0;
+        }
+
+        &:hover > ul {
+          opacity: 1;
+          visibility: visible;
+        }
         a {
           display: inline-block;
           color: #666;
@@ -70,13 +83,6 @@
           &:hover:before {
             opacity: 1;
           }
-          &:hover > ul {
-            opacity: 1;
-            visibility: visible;
-          }
-          &:hover > ul li {
-            margin-top: 0;
-          }
           &:hover,
           &.active {
             color: $primary;
@@ -84,11 +90,6 @@
           }
         }
       }
-    }
-    & > ul > li {
-      display: inline-block;
-      margin-right: -1px;
-      position: relative;
     }
     ul ul {
       position: absolute;

@@ -1,17 +1,15 @@
-import React, { memo } from "react";
-import Logo from "../../public/images/logo.png";
-import Link from "next/link";
 import Image from "next/image";
-import Router from "next/router";
-import HeaderTopbar from "../HeaderTopbar";
+import Link from "next/link";
+import { useRouter } from "next/router";
+import { memo } from "react";
 import MobileMenu from "../../components/MobileMenu";
+import Logo from "../../public/images/logo.png";
+import HeaderTopbar from "../HeaderTopbar";
 import styles from "./Header.module.scss";
 
 const Header = ({ menus = [] }) => {
-  const currentLocation = "/";
-  const pathname = Router?.router?.pathname;
-  console.log(pathname);
-  
+  const pathname = useRouter()?.pathname;
+
   return (
     <div
       className={`middle-header header-style-3 ${styles["middle-header-mod"]} ${styles["header-style-3-mod"]}`}
