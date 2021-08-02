@@ -28,7 +28,7 @@ class EventSection extends Component {
                   isLoaded: true,
                   items: json,
               })
-          }).catch(error => alert('Failed to load the event Card component as the API url is not active!'))
+          }).catch(error => console.log('Failed to load the event Card component as the API url is not active!'))
     }
 
     render(){
