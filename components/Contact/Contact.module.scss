@@ -1,6 +1,6 @@
 .wpo-contact-form-map-mod {
   .contact-form-mod {
-    padding: 60px 65px 30px;
+    padding: 55px 65px 20px;
     -webkit-box-shadow: 0px 5px 15px 0px rgba(68, 68, 68, 0.1);
     box-shadow: 0px 5px 15px 0px rgba(68, 68, 68, 0.1);
     border-radius: 5px;
@@ -22,6 +22,26 @@
       @media (max-width: 767px) {
         font-size: 25px;
         font-size: 1.5625rem;
+      }
+    }
+  }
+
+  .responsive-cards {
+    display: flex;
+    gap: 10px;
+
+    @media (max-width: 1200px) {
+      flex-direction: column;
+    }
+
+    .info-icon-mod {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      i {
+        font-size: 30px;
+        margin: 30px;
       }
     }
   }

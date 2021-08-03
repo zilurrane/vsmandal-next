@@ -552,6 +552,7 @@ img {
   height: 50px;
   border: 0;
   border-bottom: 1px solid #d0d4df;
+  outline: transparent;
   border-radius: 0;
   -webkit-box-shadow: none !important;
   box-shadow: none !important;
@@ -580,7 +581,7 @@ img {
 .volunteer-contact-form form select:focus,
 .volunteer-contact-form form textarea:focus,
 .wpo-contact-form-map form textarea:focus {
-  border-color: var(--primary);
+  border-color: $primary;
 }
 
 .wpo-contact-form-map form textarea,

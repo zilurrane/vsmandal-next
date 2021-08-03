@@ -100,14 +100,11 @@ const ContactForm = () => {
         })
         .then(() => {
           setTimeout(() => {
-            setData(
-              {
-                ...data,
-                response: null,
-              },
-              2000
-            );
-          });
+            setData({
+              ...data,
+              response: null,
+            });
+          }, 2000);
         })
         .catch((err) => {
           console.log(err);
