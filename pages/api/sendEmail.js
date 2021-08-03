@@ -6,12 +6,19 @@ const GMAIL_PASSWORD = "pywxlznnakvaykyb";
 
 export default async (req, res) => {
   // all the required data is extracted from incoming request
-  const { recipient, name, lastName, phoneNumber, email, subject, message } =
-    req.body;
+  const {
+    recipient,
+    firstName,
+    lastName,
+    phoneNumber,
+    email,
+    subject,
+    message,
+  } = req.body;
 
   // aggregated all the data in single variable to email
   const finalFormattedMessage = `
-    Name: ${name} ${lastName}\n
+    Name: ${firstName} ${lastName}\n
     Phone Number: ${phoneNumber}\n
     Email: ${email}\n
     message: ${message}

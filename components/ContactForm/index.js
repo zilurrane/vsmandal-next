@@ -76,6 +76,7 @@ const ContactForm = () => {
     ) {
       const emailData = data;
       emailData.recipient = "vajresh005@gmail.com";
+      
       setData({
         ...data,
         response: {
