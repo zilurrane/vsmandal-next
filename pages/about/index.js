@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import PageTitle from '../../components/pagetitle'
+import PageTitle from '../../components/PageTitle'
 import VedioCta from '../../components/vediocta'
 import Mission from '../../components/mission'
 import About from '../../components/about'
@@ -11,7 +11,7 @@ import { getHeaderMenuJson } from '../../shared/api';
 const CasePage = () => {
     return (
         <Fragment>
-            <PageTitle pageTitle={'About Us'} pagesub={'About'} />
+            <PageTitle pageTitle={'About Us'} pageSub={'About'} />
             <VedioCta />
             <Mission subclass={'section-padding'} />
             <About />

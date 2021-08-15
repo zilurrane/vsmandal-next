@@ -2,7 +2,7 @@ import Link from "next/link";
 import React, { Fragment } from "react";
 
 import { getAllProjects, getHeaderMenuJson } from '../../shared/api';
-import PageTitle from '../../components/pagetitle'
+import PageTitle from '../../components/Pagetitle'
 import Mission from '../../components/mission'
 import ProjectsBlocks from '../../components/Casesection'
 

@@ -1,13 +1,13 @@
 import { Fragment } from "react";
+import Donate from "../../components/Donate";
 import PageTitle from "../../components/PageTitle";
-import Contact from "../../components/Contact";
 import { getHeaderMenuJson } from "../../shared/api";
 
-const ContactPage = () => {
+const DonatePage = () => {
   return (
     <Fragment>
-      <PageTitle pageTitle={"Contact Us"} pageSub={"Contact"} />
-      <Contact />
+      <PageTitle pageTitle={"Donate Now"} pageSub={"Donate"} />
+      <Donate />
     </Fragment>
   );
 };
@@ -25,4 +25,4 @@ export async function getStaticProps() {
   };
 }
 
-export default ContactPage;
+export default DonatePage;
