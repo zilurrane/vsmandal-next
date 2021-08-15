@@ -39,6 +39,10 @@ const renderSwitch = (item) => {
       </li>
     case 'space':
       return <br />
+    case 'blockquote':
+      return <blockquote className={styles.blockquote}>
+        <JsonToHTML json={item.tokens}></JsonToHTML>
+      </blockquote>
     case 'text':
       return item.text;
   }
