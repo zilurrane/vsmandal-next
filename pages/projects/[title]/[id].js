@@ -1,9 +1,11 @@
 import React, { Fragment } from "react";
+import JsonToHTML from "../../../components/JsonToHTML";
 import {
   getAllProjects,
   getHeaderMenuJson,
   getProjectById,
 } from "../../../shared/api";
+import { contentJson } from '../../../shared/constant';
 
 const Projects = ({ project }) => {
   return (
@@ -12,8 +14,7 @@ const Projects = ({ project }) => {
         <div className={`container`}>
           <div className={`row`}>
             <div className={`col-md-12`}>
-              <h2>{project.title}</h2>
-              <div dangerouslySetInnerHTML={{ __html: project.content }}></div>
+              <JsonToHTML json={contentJson} />
             </div>
           </div>
         </div>
