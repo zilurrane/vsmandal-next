@@ -18,6 +18,12 @@ export const getProjectById = async (id) => {
   return data;
 };
 
+export const getProjectByUrlSlug = async (slug) => {
+  const res = await fetch(`${API_BASE_URL}/projects/slug/${slug}`);
+  const data = await res.json();
+  return data;
+};
+
 export const sendEmail = (data) => {
   return fetch("/api/sendEmail", {
     method: "POST",

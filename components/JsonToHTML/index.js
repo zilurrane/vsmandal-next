@@ -43,6 +43,8 @@ const renderSwitch = (item) => {
       return <blockquote className={styles.blockquote}>
         <JsonToHTML json={item.tokens}></JsonToHTML>
       </blockquote>
+    case 'image':
+      return <img className={styles.img} src={item.href} />
     case 'text':
       return item.text;
   }
