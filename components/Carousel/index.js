@@ -6,8 +6,8 @@ const CarouselComponent = ({ commaSeparatedSliderImages }) => {
     return (
         <AwesomeSlider>
             {
-                sliderImagesArray.map((imageSrc) => (
-                    <div data-src={imageSrc}></div>
+                sliderImagesArray.map((imageSrc, index) => (
+                    <div key={index} data-src={imageSrc}></div>
                 ))
             }
         </AwesomeSlider>);
