@@ -5,7 +5,6 @@ import {
   getHeaderMenuJson,
   getProjectByUrlSlug,
 } from "../../shared/api";
-import { contentJson } from '../../shared/constant';
 
 const Projects = ({ project }) => {
   const jsonData = JSON.parse(project.contentJson);
@@ -14,7 +13,7 @@ const Projects = ({ project }) => {
       <div className={`wpo-donation-page-area section-padding`}>
         <div className={`container`}>
           <div className={`row`}>
-            <div className={`col-md-12`}>
+            <div className={`col-md-12 text-justify`}>
               {
                 jsonData.map((item, index) => {
                   if (item.type === "richtexteditor") {
