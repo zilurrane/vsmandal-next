@@ -1,6 +1,7 @@
 import React, { Fragment } from "react";
 import CarouselComponent from "../../components/Carousel";
 import JsonToHTML from "../../components/JsonToHTML";
+import BlockQuote from "../../components/Quote/BlockQuote";
 import {
   getAllProjects,
   getHeaderMenuJson,
@@ -25,9 +26,7 @@ const Projects = ({ project }) => {
               <CarouselComponent commaSeparatedSliderImages={project.sliderImage} />
             </div>
             <div className={`col-md-4 quote-container`}>
-              <p>
-                {project.quote}
-              </p>
+              <BlockQuote quote={project.quote} />
             </div>
           </div>
           <div className={`row`}>

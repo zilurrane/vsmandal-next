@@ -1,0 +1,19 @@
+@import '../../styles/base.scss';
+
+.blockQuoteWrapper {
+    margin: 50px 0;
+    .blockQuote {
+        p {
+            font-size: 1.4rem;
+            font-style: italic;
+            color: $primary-lite;
+            font-weight: 600;
+        }
+        .author {
+            font-size: 1.4rem;
+            text-transform: uppercase;
+            color: $primary-lite;
+            text-shadow: 1px 1px #ff7700;
+        }
+    }
+}
