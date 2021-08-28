@@ -29,9 +29,8 @@ export default class MobileMenu extends Component {
     return (
       <div>
         <div
-          className={`mobileMenu ${isMenuShow ? `${styles["show-mod"]}` : ""} ${
-            styles["mobileMenu-mod"]
-          }`}
+          className={`mobileMenu ${isMenuShow ? `${styles["show-mod"]}` : ""} ${styles["mobileMenu-mod"]
+            }`}
         >
           <ul className={`responsivemenu ${styles["responsivemenu-mod"]}`}>
             {menus.map((item) => {
@@ -67,7 +66,7 @@ export default class MobileMenu extends Component {
                                     {submenu.title}
                                   </Link>
                                 </li>
-                                <li>
+                                {submenu.submenu && <li>
                                   <ul>
                                     {submenu.submenu.map((subsubmenu) => (
                                       <li key={subsubmenu.id}>
@@ -80,7 +79,7 @@ export default class MobileMenu extends Component {
                                       </li>
                                     ))}
                                   </ul>
-                                </li>
+                                </li>}
                               </Fragment>
                             ))}
                           </ul>
