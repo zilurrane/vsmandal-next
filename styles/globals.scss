@@ -782,3 +782,24 @@ img {
 .nav-link {
   cursor: pointer;
 }
+
+.page-container {
+  margin: 15px 0;
+  .page-title {
+    margin: 15px 0;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    text-transform: uppercase;
+    border-bottom: 1px solid $gray-athens;
+    text-align: center;
+    color: $primary;
+    text-shadow: 1px 1px black;
+  }
+  .carousel-container {
+    margin-bottom: 40px;
+  }
+  .content-container {
+    text-align: justify;
+    margin-top: 30px;
+  }
+}

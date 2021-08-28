@@ -1,4 +1,5 @@
 import React, { Fragment } from "react";
+import CarouselComponent from "../../components/Carousel";
 import JsonToHTML from "../../components/JsonToHTML";
 import {
   getAllProjects,
@@ -10,10 +11,27 @@ const Projects = ({ project }) => {
   const jsonData = JSON.parse(project.contentJson);
   return (
     <Fragment>
-      <div className={`wpo-donation-page-area section-padding`}>
+      <div className={`page-container`}>
         <div className={`container`}>
+          <div className="row">
+            <div className="col-md-12">
+              <h2 className="page-title">
+                {project.title}
+              </h2>
+            </div>
+          </div>
           <div className={`row`}>
-            <div className={`col-md-12 text-justify`}>
+            <div className={`col-md-8 carousel-container`}>
+              <CarouselComponent commaSeparatedSliderImages={project.sliderImage} />
+            </div>
+            <div className={`col-md-4 quote-container`}>
+              <p>
+                {project.quote}
+              </p>
+            </div>
+          </div>
+          <div className={`row`}>
+            <div className={`col-md-12 content-container`}>
               {
                 jsonData.map((item, index) => {
                   if (item.type === "richtexteditor") {
