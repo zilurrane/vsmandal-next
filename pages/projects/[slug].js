@@ -1,6 +1,7 @@
 import React, { Fragment } from "react";
 import CarouselComponent from "../../components/Carousel";
 import JsonToHTML from "../../components/JsonToHTML";
+import JsonToTabs from "../../components/JsonToTabs";
 import BlockQuote from "../../components/Quote/BlockQuote";
 import {
   getAllProjects,
@@ -36,7 +37,7 @@ const Projects = ({ project }) => {
                   if (item.type === "richtexteditor") {
                     return <JsonToHTML key={index} json={item.tokens} />
                   } else if (item.type === "tabs") {
-                    return <div key={index}>Tabs Component Preview</div>
+                    return <JsonToTabs key={index} tabs={item.tabs} />
                   } else {
                     return <div key={index}>Unhandled Component Preview</div>
                   }
