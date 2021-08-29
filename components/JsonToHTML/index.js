@@ -38,7 +38,7 @@ const renderSwitch = (item) => {
         <JsonToHTML json={item.tokens}></JsonToHTML>
       </li>
     case 'space':
-      return <br />
+      return <br className={styles.br} />
     case 'blockquote':
       return <blockquote className={styles.blockquote}>
         <JsonToHTML json={item.tokens}></JsonToHTML>
