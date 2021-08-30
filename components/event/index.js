@@ -88,7 +88,7 @@ class EventSection extends Component {
                                       </li>
                                     </ul>
                                     <p className="text-break text-truncate">{item.content}</p>
-                                    <Link onClick={this.ClickHandler} href="/event-details">
+                                    <Link onClick={this.ClickHandler} href="/events">
                                       Get Details...
                                     </Link>
                                   </div>
