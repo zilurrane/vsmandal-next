@@ -9,11 +9,11 @@ const Heading = ({ depth, children, ...props }) => {
 const renderSwitch = (item) => {
   switch (item.type) {
     case 'heading':
-      return <Heading depth={item.depth} className={styles.heading}>
+      return <Heading depth={item.depth} className={`${styles.heading} ${item.class}`}>
         <JsonToHTML json={item.tokens}></JsonToHTML>
       </Heading>
     case 'paragraph':
-      return <div>
+      return <div className={item.class}>
         <JsonToHTML json={item.tokens}></JsonToHTML>
       </div>
     case 'link':
@@ -44,13 +44,13 @@ const renderSwitch = (item) => {
         <JsonToHTML json={item.tokens}></JsonToHTML>
       </blockquote>
     case 'image':
-      return <img className={styles.img} src={item.href} />
+      return <img className={`${styles.img} ${item.class}`} src={item.href} />
     case 'text':
       return item.text;
   }
 }
 
-const JsonToHTML = ({ json }) => {
+const JsonToHTML = ({ json = [] }) => {
   return (
     <Fragment>
       {

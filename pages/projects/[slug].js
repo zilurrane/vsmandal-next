@@ -38,6 +38,8 @@ const Projects = ({ project }) => {
                     return <JsonToHTML key={index} json={item.tokens} />
                   } else if (item.type === "tabs") {
                     return <JsonToTabs key={index} tabs={item.tabs} />
+                  } else if (item.type === "content1image1") {
+                    return <JsonToHTML key={index} json={item.tokens} />
                   } else {
                     return <div key={index}>Unhandled Component Preview</div>
                   }
