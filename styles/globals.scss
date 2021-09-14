@@ -803,3 +803,7 @@ img {
     margin-top: 30px;
   }
 }
+
+.vertical-timeline::before {
+  background: $gray-dark !important;
+}

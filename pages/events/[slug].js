@@ -1,7 +1,6 @@
 import React, { Fragment } from "react";
 import CarouselComponent from "../../components/Carousel";
-import JsonToHTML from "../../components/JsonToHTML";
-import JsonToTabs from "../../components/JsonToTabs";
+import JsonToContent from "../../components/JsonToContent";
 import BlockQuote from "../../components/Quote/BlockQuote";
 import {
   getAllEvents,
@@ -32,19 +31,7 @@ const Events = ({ event }) => {
           </div>
           <div className={`row`}>
             <div className={`col-md-12 content-container`}>
-              {
-                jsonData.map((item, index) => {
-                  if (item.type === "richtexteditor") {
-                    return <JsonToHTML key={index} json={item.tokens} />
-                  } else if (item.type === "tabs") {
-                    return <JsonToTabs key={index} tabs={item.tabs} />
-                  } else if (item.type === "content1image1") {
-                    return <JsonToHTML key={index} json={item.tokens} />
-                  } else {
-                    return <div key={index}>Unhandled Component Preview</div>
-                  }
-                })
-              }
+              <JsonToContent jsonData={jsonData} />
             </div>
           </div>
         </div>

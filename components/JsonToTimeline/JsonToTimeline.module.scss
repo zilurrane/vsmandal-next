@@ -1,0 +1,29 @@
+@import "../../styles/base.scss";
+
+.timeline {
+    .timelineItem {
+        .timelineIconContainer {
+            background: $primary;
+            color: $white;
+            .timelineIcon {
+                height: 60px;
+                width: 60px;
+                border-radius: 50%;
+            }
+        }
+        .timelineTextContainer {
+            background: $primary;
+            .timelineText {
+                color: $white;
+                font-weight: 700;
+                white-space: pre-line;
+                font-size: 1rem;
+            }
+        }
+        .timelineDate {
+            color: $primary-text-color;
+            font-weight: 700;
+            opacity: 1;
+        }
+    }
+}
