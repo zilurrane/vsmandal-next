@@ -6,21 +6,21 @@ const Payment = () => {
   const { activeTab, switchTab } = useHandlePayment();
 
   return (
-    <div className={`shadow rounded`}>
-      <div class={`card text-center`}>
-        <div class={`card-header`}>
-          <ul class={`nav nav-tabs card-header-tabs`}>
-            <li class={`nav-item`}>
+    <div classNameName={`shadow rounded`}>
+      <div classNameName={`card text-center`}>
+        <div classNameName={`card-header`}>
+          <ul className={`nav nav-tabs card-header-tabs`}>
+            <li className={`nav-item`}>
               <span
-                class={`nav-link ${activeTab !== 2 ? "active" : ""}`}
+                className={`nav-link ${activeTab !== 2 ? "active" : ""}`}
                 onClick={switchTab}
               >
                 Give Once
               </span>
             </li>
-            <li class={`nav-item`}>
+            <li className={`nav-item`}>
               <span
-                class={`nav-link ${activeTab === 2 ? "active" : ""}`}
+                className={`nav-link ${activeTab === 2 ? "active" : ""}`}
                 onClick={switchTab}
               >
                 Monthly
