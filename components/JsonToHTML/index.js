@@ -1,6 +1,7 @@
 
 import React, { Fragment } from "react";
 import styles from "./JsonToHTML.module.scss";
+import { decode } from 'html-entities';
 
 const Heading = ({ depth, children, ...props }) => {
   return React.createElement(`h${depth}`, props, children)
@@ -46,7 +47,7 @@ const renderSwitch = (item) => {
     case 'image':
       return <img className={`${styles.img} ${item.class}`} src={item.href} />
     case 'text':
-      return item.text;
+      return decode(item.text);
   }
 }
 
