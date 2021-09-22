@@ -3,6 +3,8 @@ import React, { Fragment } from "react";
 import styles from "./JsonToHTML.module.scss";
 import { decode } from 'html-entities';
 
+const removeHtmlEntities = str => str?.trim()?.replace(new RegExp("&quot;", "g"), "");
+
 const Heading = ({ depth, children, ...props }) => {
   return React.createElement(`h${depth}`, props, children)
 }
@@ -45,7 +47,7 @@ const renderSwitch = (item) => {
         <JsonToHTML json={item.tokens}></JsonToHTML>
       </blockquote>
     case 'image':
-      return <img className={`${styles.img} ${item.class}`} src={item.href} />
+      return <img className={`${styles.img} ${item.class}`} src={item.href} alt={removeHtmlEntities(item.text)} />
     case 'text':
       return decode(item.text);
   }
