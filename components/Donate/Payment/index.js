@@ -10,6 +10,7 @@ const Payment = ({ currentPage, switchPageTo }) => {
     switchTab,
     handleChange,
     handleBlur,
+    handleClick,
     submitForm,
     data,
     error,
@@ -60,6 +61,7 @@ const Payment = ({ currentPage, switchPageTo }) => {
                 tabs={[activeTab, switchTab]}
                 handleChange={handleChange}
                 handleBlur={handleBlur}
+                handleClick={handleClick}
                 value={data}
                 err={error}
               />

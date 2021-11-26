@@ -1,14 +1,4 @@
-// PayTM	PAYTM
-// Freecharge	FREC
-// Amazon Pay	AMZPAY
-// Airtel Money	AMON
-// Oxigen	OXYCASH
-// Ola Money	OLAM
-// Jio Money	JIOM
-// ItzCash	ITZC
-// HDFC PayZapp	PAYZ
-// Yes Bank	YESW
-export default function Address({ handleChange, value, err }) {
+export default function Wallet({ handleChange, value, err }) {
   const walletList = [
     { name: "PayTM", code: "PAYTM" },
     { name: "Freecharge", code: "FREC" },

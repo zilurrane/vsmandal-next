@@ -20,11 +20,24 @@ export function getPaymentObj(paymentType) {
       cardExpiryMonth: "",
       cardExpiryYear: "",
       cardCvv: "",
+      pg: "",
+      bankcode: "",
     };
   } else if (/wallet/gi.test(paymentType)) {
     return {
       walletCode: "PAYTM",
-      pg: "cash",
+      pg: "CASH",
+      bankcode: "",
     };
+  } else if (/upi/gi.test(paymentType)) {
+    return {
+      vpa: "",
+      pg: "UPI",
+      bankcode: "UPI",
+    };
+  }else{
+    return {
+      
+    }
   }
 }

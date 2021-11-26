@@ -47,19 +47,26 @@ export const sendEmail = (data) => {
     method: "POST",
     headers: { "content-type": "application/json" },
     body: JSON.stringify(data),
-  }).then((res) => {
-    return res.json();
-  });
-};
-
-export const getCardDetails = async (cardNumber) => {
-  const BASE = "http://localhost:8000/api";
-  return fetch(`${BASE}/validate/card?cardNumber=${cardNumber}`)
+  })
     .then((res) => {
-      console.log(res);
       return res.json();
     })
+    .catch((err) => console.log(err));
+};
+
+const BASE = "http://localhost:8000/api";
+export const getCardDetails = async (cardNumber) => {
+  return await fetch(`${BASE}/validate/card?cardNumber=${cardNumber}`)
     .then((res) => {
-      console.log(res);
-    });
+      return res.json();
+    })
+    .catch((err) => console.log(err));
+};
+
+export const verifyUPI = async (vpa) => {
+  return await fetch(`${BASE}/validate/upi?vpa=${vpa}`)
+    .then((res) => {
+      return res.json();
+    })
+    .catch((err) => console.log(err));
 };

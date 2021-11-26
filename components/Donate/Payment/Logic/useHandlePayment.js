@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { getCardDetails } from "../../../../shared/api";
+import { getCardDetails, verifyUPI } from "../../../../shared/api";
 import { loadCities, loadCountries, loadStates } from "./loadLocationDetails";
 import {
   autoCompleteExpiryMonth,
@@ -13,7 +13,7 @@ import {
 } from "./validations";
 
 export default function useHandlePayment() {
-  const [activeTab, setActiveTab] = useState("Netbanking");
+  const [activeTab, setActiveTab] = useState("NB");
   const [data, setData] = useState({
     firstName: "",
     lastName: "",
@@ -29,7 +29,7 @@ export default function useHandlePayment() {
     city: "Dombivli",
     amount: "",
     pancard: "",
-    paymentType: "card",
+    paymentType: "CARD",
     paymentDetails: {},
   });
   const [error, setError] = useState({});
@@ -106,6 +106,7 @@ export default function useHandlePayment() {
   function handleChange(e) {
     setIsDataSubmitted(false);
     let isValid = validateData(e);
+    console.log(isValid);
     if (isValid === "invalid") return;
 
     const name = e.target.name;
@@ -147,10 +148,24 @@ export default function useHandlePayment() {
       });
     }
 
+    if (/^vpa/i.test(name)) {
+      const paymentDetails = {
+        ...data.paymentDetails,
+        [name]: value,
+      };
+
+      return setData({
+        ...data,
+        paymentType: "UPI",
+        paymentDetails,
+      });
+    }
+
     if (/^wallet/i.test(name)) {
       const paymentDetails = {
         ...data.paymentDetails,
         [name]: value,
+        bankcode: value,
       };
 
       return setData({
@@ -218,13 +233,48 @@ export default function useHandlePayment() {
 
     return true;
     // submit data to backend
+    const finalData = data;
   }
 
+  // isDomestic: "Y", issuingBank: "KOTAK", cardType: "VISA", cardCategory: "DC"
   function handleBlur(e) {
     const value = e.target.value;
     if (value.length === 6) {
-      getCardDetails(value).then((res) => console.log(res));
+      getCardDetails(value).then((res) => {
+        const paymentDetails = {
+          ...data.paymentDetails,
+          bankcode: res.cardType,
+          pg: res.cardCategory,
+        };
+        setData({
+          ...data,
+          paymentDetails: paymentDetails,
+        });
+      });
     }
+  }
+
+  //   {
+  //     "status": "SUCCESS",
+  //     "vpa": "9422307246@ybl",
+  //     "isVPAValid": 1,
+  //     "payerAccountName": "PRASAD VIJAYKUMAR DHUMNE"
+  // }
+  function handleClick(e) {
+    e.preventDefault();
+
+    verifyUPI(data.paymentDetails.vpa).then((res) => {
+      console.log(res);
+      const isValid = res.status === "SUCCESS" && res.isVPAValid === 1;
+      if (isValid) {
+        // enable proceed btn
+      } else {
+        setError({
+          ...error,
+          vpa: "Enter Valid UPI Handle",
+        });
+      }
+    });
   }
 
   return {
@@ -232,6 +282,7 @@ export default function useHandlePayment() {
     switchTab,
     handleChange,
     handleBlur,
+    handleClick,
     submitForm,
     data,
     error,

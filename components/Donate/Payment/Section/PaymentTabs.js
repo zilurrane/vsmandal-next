@@ -1,8 +1,16 @@
 import Cards from "./PaymentMethods/Cards";
 import Netbanking from "./PaymentMethods/Netbanking";
+import UPI from "./PaymentMethods/UPI";
 import Wallet from "./PaymentMethods/Wallet";
 
-const PaymentTabs = ({ tabs, handleChange, handleBlur, value, err }) => {
+const PaymentTabs = ({
+  tabs,
+  handleChange,
+  handleClick,
+  handleBlur,
+  value,
+  err,
+}) => {
   const [activeTab, switchTab] = tabs;
   const tabLinks = [
     { name: "Net Banking", val: "NB" },
@@ -41,7 +49,12 @@ const PaymentTabs = ({ tabs, handleChange, handleBlur, value, err }) => {
           />
         )}
         {activeTab === tabLinks[2].val && (
-          <Wallet handleChange={handleChange} value={value} err={err} />
+          <UPI
+            handleChange={handleChange}
+            handleClick={handleClick}
+            value={value}
+            err={err}
+          />
         )}
         {activeTab === tabLinks[3].val && (
           <Wallet handleChange={handleChange} value={value} err={err} />
