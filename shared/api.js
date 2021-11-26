@@ -42,7 +42,6 @@ export const getEventById = async (id) => {
   return data;
 };
 
-
 export const sendEmail = (data) => {
   return fetch("/api/sendEmail", {
     method: "POST",
@@ -51,4 +50,16 @@ export const sendEmail = (data) => {
   }).then((res) => {
     return res.json();
   });
+};
+
+export const getCardDetails = async (cardNumber) => {
+  const BASE = "http://localhost:8000/api";
+  return fetch(`${BASE}/validate/card?cardNumber=${cardNumber}`)
+    .then((res) => {
+      console.log(res);
+      return res.json();
+    })
+    .then((res) => {
+      console.log(res);
+    });
 };

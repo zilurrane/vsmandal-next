@@ -1,42 +1,87 @@
-import Card from "./Card";
 import useHandlePayment from "./Logic/useHandlePayment";
-import styles from "./Payment.module.scss";
+import Address from "./Section/Address";
+import PaymentDetails from "./Section/PaymentDetails";
+import PaymentTabs from "./Section/PaymentTabs";
+import PersonalDetails from "./Section/PersonalDetails";
 
-const Payment = () => {
-  const { activeTab, switchTab } = useHandlePayment();
+const Payment = ({ currentPage, switchPageTo }) => {
+  const {
+    activeTab,
+    switchTab,
+    handleChange,
+    handleBlur,
+    submitForm,
+    data,
+    error,
+    isDataSubmitted,
+    locationObj,
+  } = useHandlePayment();
 
   return (
-    <div classNameName={`shadow rounded`}>
-      <div classNameName={`card text-center`}>
-        <div classNameName={`card-header`}>
-          <ul className={`nav nav-tabs card-header-tabs`}>
-            <li className={`nav-item`}>
-              <span
-                className={`nav-link ${activeTab !== 2 ? "active" : ""}`}
-                onClick={switchTab}
+    <div className={`shadow rounded`}>
+      <div className={`card text-center`}>
+        <div className={`card-header`}>Donate</div>
+        <div className={`card-body`}>
+          <h5 className={`card-title`}>Special title treatment</h5>
+
+          <p className={`card-text`}>
+            With supporting text below as a natural lead-in to additional
+            content.
+          </p>
+
+          <form
+            className={`w-100 text-left ${
+              isDataSubmitted ? "was-validated" : ""
+            }`}
+          >
+            {currentPage === 0 && (
+              <>
+                <PersonalDetails
+                  handleChange={handleChange}
+                  value={data}
+                  err={error}
+                />
+                <Address
+                  handleChange={handleChange}
+                  value={data}
+                  err={error}
+                  locationObj={locationObj}
+                />
+                <PaymentDetails
+                  tabs={[activeTab, switchTab]}
+                  handleChange={handleChange}
+                  value={data}
+                  err={error}
+                />
+              </>
+            )}
+            {currentPage === 1 && (
+              <PaymentTabs
+                tabs={[activeTab, switchTab]}
+                handleChange={handleChange}
+                handleBlur={handleBlur}
+                value={data}
+                err={error}
+              />
+            )}
+
+            <div className={`text-center mt-3`}>
+              <button
+                type="button"
+                className={`btn btn-primary`}
+                onClick={(e) => {
+                  const isSubmiited = submitForm(e);
+                  console.log(isSubmiited);
+                  if (isSubmiited) switchPageTo(true);
+                }}
               >
-                Give Once
-              </span>
-            </li>
-            <li className={`nav-item`}>
-              <span
-                className={`nav-link ${activeTab === 2 ? "active" : ""}`}
-                onClick={switchTab}
-              >
-                Monthly
-              </span>
-            </li>
-          </ul>
+                Donate
+              </button>
+            </div>
+          </form>
         </div>
-        {activeTab !== 2 ? (
-          <Card title={`Choose a amount`} link={`Go to Next Step`}>
-            form or tags to donate amount
-          </Card>
-        ) : (
-          <Card title={`Choose a monthly amount`} link={`Go to Next Step`}>
-            form or tags to donate amount
-          </Card>
-        )}
+
+        <div className={`card-footer text-muted`}>Footer</div>
       </div>
     </div>
   );
