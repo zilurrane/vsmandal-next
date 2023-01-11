@@ -1,0 +1,25 @@
+@import "../../styles/base.scss";
+
+.banner{
+  margin-top: 20px;
+  margin-bottom: 20px;
+.banner-right-text{
+  background-color: #FF5900;
+  
+  
+  h2{
+    color: #ffffff;
+    padding: 20px;
+    padding-bottom: 0px;
+    
+  }
+  hr{
+    border-top: 2px solid #ffffff;
+    width: 95%;
+  }
+  p{
+    color: #ffffff;
+    padding-left: 20px;
+  }
+}
+}
