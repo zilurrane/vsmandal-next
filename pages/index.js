@@ -15,6 +15,13 @@ const HomePage = () => {
   return (
     <Fragment>
       <Hero />
+      <CounterSection />
+      <Mission />
+      <EventSection />
+      <About />     
+      <BlogSection />
+      <WorldSection />
+      {/* <Hero />
       <Mission />
       <About />
       <CaseSlide />
@@ -23,7 +30,8 @@ const HomePage = () => {
       <WorldSection />
       <EventSection />
       <CtaSection />
-      <BlogSection />
+      <BlogSection /> */}
+    
     </Fragment>
   );
 };

@@ -96,7 +96,7 @@ const Mission = (props) => {
             </div>
           </div>
         </div>
-      </div>
+      </div> 
     </div>
   );
 };
