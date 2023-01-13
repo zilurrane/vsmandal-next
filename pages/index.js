@@ -14,7 +14,7 @@ import { getHeaderMenuJson } from "../shared/api";
 const HomePage = () => {
   return (
     <Fragment>
-      <Hero />
+      
       <Mission />
       <About />
       <CaseSlide />
