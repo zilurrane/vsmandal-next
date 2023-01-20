@@ -8,7 +8,7 @@ import styles from "./about.module.scss";
 const About = () => {
   return (
     <div
-      className={`wpo-about-area section-padding ${styles["wpo-about-area-mod"]}`}
+      className={`wpo-about-area ${styles["wpo-about-area-mod"]}`}
     >
       <div className={`container`}>
         <div className={`row`}>

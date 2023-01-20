@@ -10,7 +10,7 @@ const WorldSection = (props) => {
   };
   return (
     <div
-      className={`wpo-world-area ${props.worldclass} ${styles["wpo-world-area-mod"]}`}
+      className={`wpo-world-area section-padding ${props.worldclass} ${styles["wpo-world-area-mod"]}`}
     >
       <div className={`container`}>
         <div className={`row`}>

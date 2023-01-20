@@ -10,44 +10,67 @@ import WorldSection from "../components/world";
 import { getHeaderMenuJson } from "../shared/api";
 
 const HomePage = () => {
+  const counterData = [
+    {
+      id: 1,
+      data: [
+        { count: 6200, title: "Donation" },
+        { count: 80, title: "Fund Raised" },
+        // { count: 245, title: 'Volunteers' },
+        // { count: 605, title: 'Projects' },
+      ],
+    },
+    {
+      id: 2,
+      data: [
+        // { count: 6200, title: 'Donation' },
+        // { count: 80, title: 'Fund Raised' },
+        { count: 245, title: "Volunteers" },
+        { count: 605, title: "Projects" },
+      ],
+    },
+    {
+      id: 3,
+      data: [
+        { count: 200, title: "Donation" },
+        { count: 85, title: "Fund Raised" },
+        { count: 350, title: "Volunteers" },
+        { count: 75, title: "Projects" },
+      ],
+    },
+  ];
+
   return (
     <Fragment>
       <ControlledCarousel
+        variant="dark"
         items={[
-          { id: 1, comp: <Hero />, caption: 123 },
-          { id: 2, comp: <Hero />, caption: 456 },
-          { id: 3, comp: <Hero />, caption: 789 },
+          { id: 1, comp: <Hero /> },
+          { id: 2, comp: <Hero /> },
+          { id: 3, comp: <Hero /> },
         ]}
       />
-      <Hero />
 
       <ControlledCarousel
-        items={[
-          {
-            id: 1, comp: <CounterSection data={[
-              { count: 6200, title: 'Donation' },
-              { count: 80, title: 'Fund Raised' },
-              // { count: 245, title: 'Volunteers' },
-              // { count: 605, title: 'Projects' },
-            ]} />,
-          },
-          {
-            id: 2, comp: <CounterSection data={[
-              // { count: 6200, title: 'Donation' },
-              // { count: 80, title: 'Fund Raised' },
-              { count: 245, title: 'Volunteers' },
-              { count: 605, title: 'Projects' },
-            ]} />,
-          },
-          {
-            id: 3, comp: <CounterSection data={[
-              { count: 200, title: 'Donation' },
-              { count: 85, title: 'Fund Raised' },
-              { count: 350, title: 'Volunteers' },
-              { count: 75, title: 'Projects' },
-            ]} />,
-          },
-        ]}
+        items={
+          counterData?.map((dataObj) => {
+            return {
+              id: dataObj.id,
+              comp: <CounterSection data={dataObj.data} />,
+            };
+          })
+          // [
+          // {
+          //   id: 1, comp: <CounterSection data={counterData.slide1} />,
+          // },
+          // {
+          //   id: 2, comp: <CounterSection data={counterData.slide2} />,
+          // },
+          // {
+          //   id: 3, comp: <CounterSection data={counterData.slide3} />,
+          // },
+          // ]
+        }
       />
 
       <Mission />

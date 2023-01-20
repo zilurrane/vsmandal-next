@@ -1,0 +1,31 @@
+@import "../../styles/base.scss";
+
+.arrow-container {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
+  transition: all 500ms;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+
+  height: 50%;
+  cursor: pointer;
+
+  z-index: 1;
+
+  &.arrow-next {
+    right: 0;
+  }
+
+  &:hover {
+    &.dark {
+      background-color: rgba($color: #000, $alpha: 0.3);
+    }
+
+    background-color: rgba($color: #fff, $alpha: 0.5);
+  }
+}
