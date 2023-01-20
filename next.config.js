@@ -5,4 +5,12 @@ module.exports = {
     // your project has ESLint errors.
     ignoreDuringBuilds: true,
   },
-}
+  async rewrites() {
+    return [
+      {
+        source: "/docs",
+        destination: "https://vsmandal-docs.vercel.app/",
+      },
+    ];
+  },
+};
