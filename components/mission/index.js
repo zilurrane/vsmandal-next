@@ -9,7 +9,7 @@ import styles from "./Mission.module.scss";
 const Mission = (props) => {
   return (
     <div
-      className={`wpo-mission-area ${props.subclass} ${styles["wpo-mission-area-mod"]}`}
+      className={`wpo-mission-area py-5 ${props.subclass} ${styles["wpo-mission-area-mod"]}`}
     >
       <div className={`container`}>
         <div className={`row`}>
@@ -96,7 +96,7 @@ const Mission = (props) => {
             </div>
           </div>
         </div>
-      </div> 
+      </div>
     </div>
   );
 };

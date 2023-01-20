@@ -20,7 +20,36 @@ const HomePage = () => {
         ]}
       />
       <Hero />
-      <CounterSection />
+
+      <ControlledCarousel
+        items={[
+          {
+            id: 1, comp: <CounterSection data={[
+              { count: 6200, title: 'Donation' },
+              { count: 80, title: 'Fund Raised' },
+              // { count: 245, title: 'Volunteers' },
+              // { count: 605, title: 'Projects' },
+            ]} />,
+          },
+          {
+            id: 2, comp: <CounterSection data={[
+              // { count: 6200, title: 'Donation' },
+              // { count: 80, title: 'Fund Raised' },
+              { count: 245, title: 'Volunteers' },
+              { count: 605, title: 'Projects' },
+            ]} />,
+          },
+          {
+            id: 3, comp: <CounterSection data={[
+              { count: 200, title: 'Donation' },
+              { count: 85, title: 'Fund Raised' },
+              { count: 350, title: 'Volunteers' },
+              { count: 75, title: 'Projects' },
+            ]} />,
+          },
+        ]}
+      />
+
       <Mission />
       <EventSection />
       <About />

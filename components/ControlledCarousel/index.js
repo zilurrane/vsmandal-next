@@ -38,11 +38,12 @@ export default function ControlledCarousel({ items = [] }) {
       activeIndex={activeIndex}
       next={() => goToSlide()}
       previous={() => goToSlide(true)}
+      interval={null}
     >
       <CarouselIndicators
         items={items}
         activeIndex={activeIndex}
-        onClickHandler={() => {}}
+        onClickHandler={(index) => setActiveIndex(index)}
       />
       {slides}
       <CarouselControl

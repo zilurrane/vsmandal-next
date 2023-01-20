@@ -13,49 +13,55 @@
     height: 100%;
     background: rgba(6, 34, 101, 0.85);
   }
-  .wpo-counter-grids-mod .grid-mod {
-    width: 24%;
-    float: left;
-    margin-right: 10px;
-    margin-bottom: 10px;
-    text-align: center;
-    position: relative;
-    overflow: hidden;
 
-    @media (max-width: 1200px) {
-      width: 23%;
-    }
+  .wpo-counter-grids-mod {
+    display: flex;
+    justify-content: center;
 
-    &:before {
-      content: "";
-      position: absolute;
-      top: 15px;
-      right: 0;
-      width: 1px;
-      height: 70px;
-      background: #636363;
-    }
-    &:last-child:before {
-      display: none;
-    }
-    p {
-      font-size: 18px;
-      font-weight: normal;
-      color: #999;
-      padding-top: 5px;
-      margin-bottom: 0;
-    }
-    h2 {
-      font-size: 60px;
-      font-weight: 600;
-      color: #fff;
-      margin: 0;
-      line-height: 40px;
-      margin-top: 8px;
-      padding-bottom: 15px;
+    .grid-mod {
+      width: 24%;
+      float: left;
+      margin-right: 10px;
+      margin-bottom: 10px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
 
-      @media (max-width: 992px) {
-        font-size: 35px;
+      @media (max-width: 1200px) {
+        width: 23%;
+      }
+
+      &:before {
+        content: "";
+        position: absolute;
+        top: 15px;
+        right: 0;
+        width: 1px;
+        height: 70px;
+        background: #636363;
+      }
+      &:last-child:before {
+        display: none;
+      }
+      p {
+        font-size: 18px;
+        font-weight: normal;
+        color: #999;
+        padding-top: 5px;
+        margin-bottom: 0;
+      }
+      h2 {
+        font-size: 60px;
+        font-weight: 600;
+        color: #fff;
+        margin: 0;
+        line-height: 40px;
+        margin-top: 8px;
+        padding-bottom: 15px;
+
+        @media (max-width: 992px) {
+          font-size: 35px;
+        }
       }
     }
   }
@@ -155,9 +161,6 @@
 //     font-size: 35px;
 //   }
 // }
-
-
-
 
 // ** styles not applicable
 // .wpo-counter-style-2-mod {
