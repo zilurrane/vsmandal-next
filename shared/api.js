@@ -1,9 +1,14 @@
 export const API_BASE_URL = "https://vsmandal-api.herokuapp.com/api";
 
 export const getHeaderMenuJson = async () => {
-  const res = await fetch(`${API_BASE_URL}/masters/menu`);
-  const data = await res.json();
-  return data;
+  return [
+    { "id": 1, "title": "Home", "link": "/" },
+    { "id": 2, "title": "About Us", "link": "/about" },
+    { "id": 3, "title": "Contact", "link": "/contact" }
+  ];
+  // const res = await fetch(`${API_BASE_URL}/masters/menu`);
+  // const data = await res.json();
+  // return data;
 };
 
 export const getAllProjects = async () => {
