@@ -263,6 +263,14 @@
   overflow: hidden;
 }
 
+.hero-slider {
+  .slide {
+    .row {
+      text-align: left;
+    }
+  }
+}
+
 .hero-style-1:before {
   position: absolute;
   left: 0;
@@ -744,11 +752,27 @@ hero-style3
   bottom: -95px;
 }
 
-@media (max-width: 1590px) {
+@media (max-width: 1710px) {
   .hero-style-2 .right-vec {
     right: 210px;
     bottom: 129px;
     width: 800px;
+    height: 727px;
+    z-index: -1;
+  }
+}
+
+@media (max-width: 1610px) {
+  .hero-style-2 .right-vec {
+    width: 800px;
+  }
+}
+
+@media (max-width: 1420px) {
+  .hero-style-2 .right-vec {
+    right: 210px;
+    bottom: 150px;
+    width: 680px;
     height: 727px;
     z-index: -1;
   }
