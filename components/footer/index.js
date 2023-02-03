@@ -53,41 +53,7 @@ const Footer = (props) => {
             </div>
             <div
               className={`col col-lg-3 col-md-6 col-sm-12 col-12 ${styles["col-mod"]}`}
-            >
-              <div
-                className={`widget link-widget resource-widget ${styles["widget-mod"]} ${styles["link-widget-mod"]} ${styles["resource-widget-mod"]}`}
-              >
-                <div className={`widget-title ${styles["widget-title-mod"]}`}>
-                  <h3>Top News</h3>
-                </div>
-                <div className={`news-wrap ${styles["news-wrap-mod"]}`}>
-                  <div className={`news-img ${styles["news-img-mod"]}`}>
-                    <Image src={n1} alt="" />
-                  </div>
-                  <div className={`news-text ${styles["news-text-mod"]}`}>
-                    <h3>
-                      <Link onClick={ClickHandler} href="/blog">
-                        Education for all poor children
-                      </Link>
-                    </h3>
-                    <span>12 Nov, 2020</span>
-                  </div>
-                </div>
-                <div className={`news-wrap ${styles["news-wrap-mod"]}`}>
-                  <div className={`news-img ${styles["news-img-mod"]}`}>
-                    <Image src={n2} alt="" />
-                  </div>
-                  <div className={`news-text ${styles["news-text-mod"]}`}>
-                    <h3>
-                      <Link onClick={ClickHandler} href="/blog">
-                        Education for all poor children
-                      </Link>
-                    </h3>
-                    <span>12 Nov, 2020</span>
-                  </div>
-                </div>
-              </div>
-            </div>
+            ></div>
             <div
               className={`col col-lg-2 col-md-6 col-sm-12 col-12 ${styles["col-mod"]}`}
             >
