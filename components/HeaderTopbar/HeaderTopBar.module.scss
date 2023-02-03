@@ -12,6 +12,10 @@
     padding: 20px 0;
   }
 
+  @media (max-width: 500px) {
+    display: none;
+  }
+
   p {
     font-size: 15px;
     font-size: 1rem;
