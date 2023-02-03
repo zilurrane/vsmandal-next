@@ -1,14 +1,34 @@
 import { NextSeo } from "next-seo";
-import "../styles/globals.scss";
 import "react-modal-video/scss/modal-video.scss";
+import Footer from "../components/footer";
+import Header from "../components/header";
+import useWindowSize from "../helpers/hook";
+import "../public/css/flaticon.css";
 import "../public/css/font-awesome.min.css";
 import "../public/css/themify-icons.css";
-import "../public/css/flaticon.css";
-import Header from "../components/header";
-import Footer from "../components/footer";
+import "../styles/globals.scss";
 
 function MyApp({ Component, pageProps }) {
   const { menus } = pageProps;
+
+  const { width } = useWindowSize();
+
+  // temporary block for mobile screens
+  if (width < 1050)
+    return (
+      <p
+        style={{
+          height: "100vh",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          fontSize: "20px",
+        }}
+      >
+        Please visit the site using desktop
+      </p>
+    );
+
   return (
     <>
       <NextSeo
